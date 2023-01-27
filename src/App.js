@@ -1,9 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./container/Home";
+
 
 function App() {
   return (
-    <h1>Portfolio test</h1>
+    <div>
+      <h1>Portfolio test</h1>
+      <Home />
+    </div>
   );
 }
 
