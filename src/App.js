@@ -33,7 +33,7 @@ function App() {
           </Nav>
           <Main>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/ben-barlow-portfolio" element={<Home />} />
             </Routes>
           </Main>
         </Router>
