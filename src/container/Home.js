@@ -1,17 +1,23 @@
 import About from "../components/About"
 import Contact from "../components/Contact"
 import Projects from "../components/Projects"
+import styled from "styled-components"
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`
 
 const Home = () => {
 
     return (
-        <div>
-            <h2>Home</h2>
-
-            <h3><About /></h3>
-            <h3><Contact /></h3>
-            <h3><Projects /></h3>
-        </div>
+        <>
+            <Wrapper>
+                <About />
+                <Contact />
+                <Projects />
+            </Wrapper>
+        </>
 
     )
 
