@@ -6,7 +6,7 @@ const Wrapper = styled.div`
 `
 
 const Header = styled.h2`
-    color: #fffffe
+    color: #fffffe;
 `
 
 const Projects = () => {
