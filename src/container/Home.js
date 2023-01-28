@@ -14,8 +14,8 @@ const Home = () => {
         <>
             <Wrapper>
                 <About />
-                {/* <Contact />
-                <Projects /> */}
+                <Contact />
+                <Projects />
             </Wrapper>
         </>
 
