@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar";
 const Wrapper = styled.div`
   display: grid;
   grid-template-areas: 'nav main';
-  grid-template-columns: 150px;
+  grid-template-columns: 150px 1fr;
   min-height:100%;
 `
 
