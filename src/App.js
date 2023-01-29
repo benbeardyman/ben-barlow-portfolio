@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./container/Home";
 import NavBar from "./components/NavBar";
@@ -29,9 +29,9 @@ function App() {
           <NavBar />
         </Nav>
         <Main>
-          <Routes>
-            <Route path="/ben-barlow-portfolio" element={<Home />} />
-          </Routes>
+          <Switch>
+            <Route exact path="/ben-barlow-portfolio" component={Home} />
+          </Switch>
         </Main>
       </Router>
     </Wrapper>

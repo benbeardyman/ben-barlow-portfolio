@@ -31,13 +31,13 @@ const NavBar = () => {
         <Wrapper>
             <Links>
                 <li>
-                    <Link to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>
+                    <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>
                 </li>
                 <li>
-                    <Link to="/ben-barlow-portfolio/#projects" style={linkStyle}>Projects</Link>
+                    <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>Projects</Link>
                 </li>
                 <li>
-                    <Link to="/ben-barlow-portfolio/#contact" style={linkStyle}>Contact</Link>
+                    <Link smooth to="/ben-barlow-portfolio/#contact" style={linkStyle}>Contact</Link>
                 </li>
             </Links>
         </Wrapper>
