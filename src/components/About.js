@@ -12,12 +12,16 @@ const Header = styled.h2`
     color: #fffffe;
 `
 
+const ProfileImage = styled.img`
+    border-radius: 30%;
+`
+
 const About = () => {
 
     return (
         <Wrapper id="about">
             <Header>About</Header>
-            <img src={pixelMug} height="200" />
+            <ProfileImage src={pixelMug} height="200" />
         </Wrapper>
     )
 
