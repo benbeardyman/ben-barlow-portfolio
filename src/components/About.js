@@ -1,4 +1,7 @@
 import styled from "styled-components"
+import pixelMug from "../images/pixel_mug.jpg"
+
+
 
 const Wrapper = styled.div`
     height: 100vh;
@@ -12,9 +15,12 @@ const Header = styled.h2`
 const About = () => {
 
     return (
-        <Wrapper>
-            <Header>About</Header>
-        </Wrapper>
+        <section id="about">
+            <Wrapper>
+                <Header>About</Header>
+                <img src={pixelMug} height="200" />
+            </Wrapper>
+        </section>
     )
 
 }
