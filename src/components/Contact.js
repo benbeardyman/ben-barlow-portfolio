@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Wrapper = styled.div`
+const Wrapper = styled.section`
     height: 100vh;
     background-color: #004643;
 `
@@ -12,11 +12,9 @@ const Header = styled.h2`
 const Contact = () => {
 
     return (
-        <section id="contact">
-            <Wrapper>
-                <Header>Contact</Header>
-            </Wrapper>
-        </section>
+        <Wrapper id="contact">
+            <Header>Contact</Header>
+        </Wrapper>
     )
 
 }

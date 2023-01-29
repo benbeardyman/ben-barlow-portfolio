@@ -23,23 +23,18 @@ const Main = styled.div`
 
 function App() {
   return (
-    <>
-      <h1>Portfolio test</h1>
-
-      <Wrapper>
-        <Router>
-          <Nav>
-            <NavBar />
-          </Nav>
-          <Main>
-            <Routes>
-              <Route path="/ben-barlow-portfolio" element={<Home />} />
-            </Routes>
-          </Main>
-        </Router>
-      </Wrapper>
-
-    </>
+    <Wrapper>
+      <Router>
+        <Nav>
+          <NavBar />
+        </Nav>
+        <Main>
+          <Routes>
+            <Route path="/ben-barlow-portfolio" element={<Home />} />
+          </Routes>
+        </Main>
+      </Router>
+    </Wrapper>
   );
 }
 
