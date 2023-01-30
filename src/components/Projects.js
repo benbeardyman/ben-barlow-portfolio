@@ -1,13 +1,17 @@
 import ProjectItem from "./ProjectItem"
 import styled from "styled-components"
 
-const Wrapper = styled.section`
+const Section = styled.section`
     height: 100vh;
     background-color: #abd1c6;
 `
 
 const Header = styled.h2`
     color: #001e1d;
+`
+
+const Ul = styled.ul`
+    list-style: none;
 `
 
 const Projects = ({ projects }) => {
@@ -17,10 +21,10 @@ const Projects = ({ projects }) => {
     })
 
     return (
-        <Wrapper id='projects'>
+        <Section id='projects'>
             <Header>Projects</Header>
-            <ul>{projectsArray}</ul>
-        </Wrapper>
+            <Ul>{projectsArray}</Ul>
+        </Section>
     )
 
 }
