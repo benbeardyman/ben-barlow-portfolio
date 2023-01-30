@@ -1,3 +1,4 @@
+import { useState } from "react"
 import About from "../components/About"
 import Contact from "../components/Contact"
 import Projects from "../components/Projects"
@@ -12,14 +13,11 @@ const Wrapper = styled.div`
 const Home = () => {
 
     return (
-        <>
-            <Wrapper>
-                <About />
-                <Projects />
-                <Contact />
-            </Wrapper>
-        </>
-
+        <Wrapper>
+            <About />
+            <Projects />
+            <Contact />
+        </Wrapper>
     )
 
 }

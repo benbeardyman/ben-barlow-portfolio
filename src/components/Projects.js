@@ -1,3 +1,4 @@
+import ProjectItem from "./ProjectItem"
 import styled from "styled-components"
 
 const Wrapper = styled.section`

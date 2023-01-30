@@ -16,13 +16,14 @@ const Links = styled.ul`
     margin:0;
     padding: .75rem;
     list-style: none;
+    color: #001e1d;
 `
 
 const linkStyle = {
-  textDecoration: "none",
-  color: "#001e1d",
-  fontSize: "1.5rem",
-  fontWeight: "bold"
+    textDecoration: "none",
+    color: "#001e1d",
+    fontSize: "1.5rem",
+    fontWeight: "bold"
 }
 
 const NavBar = () => {

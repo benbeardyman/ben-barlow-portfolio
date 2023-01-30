@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import pixelMug from "../images/pixel_mug.jpg"
+import mugshot from "../images/mugshot.jpg"
 
 const Section = styled.section`
     display: flex;
