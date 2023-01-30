@@ -3,19 +3,22 @@ import About from "../components/About"
 import Contact from "../components/Contact"
 import Projects from "../components/Projects"
 import styled from "styled-components"
+import projectsData from "../data/ProjectsData.js"
+
 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    
 `
 
 const Home = () => {
+    
+    const [projects, setProjects] = useState(projectsData)
 
     return (
         <Wrapper>
             <About />
-            <Projects />
+            <Projects projects={projects} />
             <Contact />
         </Wrapper>
     )

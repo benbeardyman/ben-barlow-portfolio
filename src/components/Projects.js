@@ -10,11 +10,16 @@ const Header = styled.h2`
     color: #001e1d;
 `
 
-const Projects = () => {
+const Projects = ({ projects }) => {
+
+    const projectsArray = projects.map((project) => {
+        return <ProjectItem key={project.id} name={project.name} description={project.description} img={project.img} url={project.url} />
+    })
 
     return (
         <Wrapper id='projects'>
             <Header>Projects</Header>
+            <ul>{projectsArray}</ul>
         </Wrapper>
     )
 

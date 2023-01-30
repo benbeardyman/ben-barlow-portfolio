@@ -1,8 +1,11 @@
-const ProjectItem = () => {
+const ProjectItem = (project, name, description, image, url) => {
 
-    return(
+    return (
         <div>
-            This is a project
+            <li>
+                <p>{project.name}</p>
+                <p>{project.description}</p>
+            </li>
         </div>
     )
 }
