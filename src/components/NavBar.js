@@ -5,42 +5,50 @@ const Wrapper = styled.nav`
     display: flex;
     align-items: center;
     height: 100vh;
-    background-color: #abd1c6;
+    background-color: #004643;
     border-right:5px solid;
     border-color: #001e1d;
 `
-const Links = styled.ul`
+const NavLinks = styled.ul`
     display: flex;
     flex-direction:column;
     justify-content: center;
-    margin:0;
-    padding: .75rem;
+    padding:0;
     list-style: none;
-    color: #001e1d;
+    
+`
+
+const NavLink = styled.li`
+    width: 100vw;
+    border-top:.15rem solid;
+    border-color: #001e1d;
+    padding: 0.5rem;
 `
 
 const linkStyle = {
+    margin: "0.5rem",
     textDecoration: "none",
-    color: "#001e1d",
+    color: "#f9bc60",
     fontSize: "1.5rem",
-    fontWeight: "bold"
+    fontWeight: "light"
 }
 
 const NavBar = () => {
 
     return (
         <Wrapper>
-            <Links>
-                <li>
+            <NavLinks>
+                <NavLink>
                     <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>
-                </li>
-                <li>
+                </NavLink>
+                <NavLink>
                     <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>Projects</Link>
-                </li>
-                <li>
+                </NavLink>
+                <NavLink>
                     <Link smooth to="/ben-barlow-portfolio/#contact" style={linkStyle}>Contact</Link>
-                </li>
-            </Links>
+                </NavLink>
+                <NavLink/>
+            </NavLinks>
         </Wrapper>
     )
 
