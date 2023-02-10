@@ -15,18 +15,16 @@ const NavLinks = styled.ul`
     justify-content: center;
     padding:0;
     list-style: none;
-    
 `
 
 const NavLink = styled.li`
-    width: 100vw;
+    width: 150%;
     border-top:.15rem solid;
     border-color: #001e1d;
     padding: 0.5rem;
 `
 
 const linkStyle = {
-    margin: "0.5rem",
     textDecoration: "none",
     color: "#f9bc60",
     fontSize: "1.5rem",
