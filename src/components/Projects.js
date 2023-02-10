@@ -5,12 +5,17 @@ const Section = styled.section`
     height: 100vh;
     background-color: #abd1c6;
 `
+const ProjectsWrapper = styled.div`
+    height:80vh;
+`
 
 const Header = styled.h2`
     color: #001e1d;
 `
 
 const Ul = styled.ul`
+    display: flex;
+    justify-content: space-around;
     list-style: none;
 `
 
@@ -23,7 +28,9 @@ const Projects = ({ projects }) => {
     return (
         <Section id='projects'>
             <Header>Projects</Header>
+            <ProjectsWrapper>
             <Ul>{projectsArray}</Ul>
+            </ProjectsWrapper>
         </Section>
     )
 
