@@ -11,12 +11,15 @@ const Section = styled.section`
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
-    height: 60%;
+    /* align-items: flex-end; */
+    flex-wrap: wrap;
+    /* gap: 16px; */
+    height: 70%;
     width: 80%;
-    background-color: #e8e4e6;
-    border:5px solid;
+    background-color: #fffffe;
+    border:4px solid;
     border-radius: 15px;
-    border-color: #001e1d;
+    border-color: #e16162;
 `
 
 const Header = styled.h2`
@@ -25,7 +28,7 @@ const Header = styled.h2`
 
 const ProfileImage = styled.img`
     margin: 20px;
-    border:5px solid;
+    border:4px solid;
     border-radius: 15px;
     border-color: #001e1d;
 `
@@ -36,6 +39,7 @@ const About = () => {
         <Section id="about">
             <Wrapper>
                 <Header>About</Header>
+                <p>I'm an Edinburgh based software developer. I see myself as full stack but leaning towards the front end</p>
                 <ProfileImage src={pixelMug} height="200" />
             </Wrapper>
         </Section>

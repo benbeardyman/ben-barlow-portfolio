@@ -4,11 +4,11 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
     height: 300px;
-    width: 200px;
+    width: 300px;
     background-color: #e8e4e6;
-    border:5px solid;
+    border:4px solid;
     border-radius: 15px;
-    border-color: #001e1d;
+    border-color: #e16162;
 `
 const ProjectWrapper = styled.li`
     display: flex;

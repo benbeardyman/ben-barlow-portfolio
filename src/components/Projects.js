@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Section = styled.section`
     height: 100vh;
-    background-color: #abd1c6;
+    background-color: #004643;
 `
 const ProjectsWrapper = styled.div`
     height:80vh;

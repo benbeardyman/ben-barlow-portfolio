@@ -10,12 +10,12 @@ const Section = styled.section`
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-around;
-    height: 60%;
+    height: 70%;
     width: 80%;
     background-color: #e8e4e6;
-    border:5px solid;
+    border:4px solid;
     border-radius: 15px;
-    border-color: #001e1d;
+    border-color: #e16162;
 `
 
 const Header = styled.h2`
