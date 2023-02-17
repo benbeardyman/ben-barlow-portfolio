@@ -12,7 +12,7 @@ const projectsData = [
         description: "CRUD web application that provides the ability to manage a camera shop inventory, adding products and manufacturers and editing stock levels. Created with Python using the Flask library, a PostgreSQL database and RESTful routes.",
         img: "image",
         url: "url",
-    }
+    },
     
     // {
     //     id: 3,
@@ -20,7 +20,7 @@ const projectsData = [
     //     description: "this is my third project",
     //     img: "image",
     //     url: "url",
-    // },
+    // }
 ]
 
 export default projectsData

@@ -4,21 +4,18 @@ import styled from "styled-components"
 const Section = styled.section`
     height: 100vh;
     background-color: #004643;
+    display:flex; 
 `
 const ProjectsWrapper = styled.div`
-    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto; 
 `
 
 const Header = styled.h2`
-    color: #001e1d;
-`
-
-const Ul = styled.ul`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-content: space-between; */
-    list-style: none;
+    color: #e8e4e6;
 `
 
 const Projects = ({ projects }) => {
@@ -29,11 +26,9 @@ const Projects = ({ projects }) => {
 
     return (
         <Section id='projects'>
-            <Header>Projects</Header>
             <ProjectsWrapper>
-                {/* <Ul> */}
-                    {projectsArray}
-                {/* </Ul> */}
+            <Header>Projects</Header>
+                {projectsArray}
             </ProjectsWrapper>
         </Section>
     )
