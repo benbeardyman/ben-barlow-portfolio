@@ -4,22 +4,22 @@ const Section = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #004643;
+    height: 30vh;
+    background-color: #f9bc60;
 `
 const Wrapper = styled.div`
     display: flex;
-    justify-content: space-around;
-    height: 50%;
+    justify-content: flex-start;
     width: 80%;
-    background-color: #fffffe;
+    /* background-color: #fffffe;
     border:4px solid;
     border-radius: 40px;
-    border-color: #e16162;
+    border-color: #e16162; */
 `
 
 const Header = styled.h2`
     color: #001e1d;
+    padding: 1.5em;
 `
 
 const Contact = () => {
@@ -27,7 +27,7 @@ const Contact = () => {
     return (
         <Section id="contact">
             <Wrapper>
-                <Header>Contact</Header>
+                <Header>Find Me</Header>
             </Wrapper>
         </Section>
     )
