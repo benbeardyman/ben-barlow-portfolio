@@ -5,17 +5,25 @@ const Section = styled.section`
     height: 100vh;
     background-color: #004643;
     display:flex; 
+    align-items: center;
+    justify-content: center;
 `
-const ProjectsWrapper = styled.div`
+const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto; 
+    height: 70%;
+    width: 80%;
+    background-color: #fffffe;
+    border:4px solid;
+    border-radius: 15px;
+    border-color: #e16162;
 `
 
 const Header = styled.h2`
-    color: #e8e4e6;
+    color: #001e1d;
 `
 
 const Projects = ({ projects }) => {
@@ -26,10 +34,10 @@ const Projects = ({ projects }) => {
 
     return (
         <Section id='projects'>
-            <ProjectsWrapper>
+            <Wrapper>
             <Header>Projects</Header>
                 {projectsArray}
-            </ProjectsWrapper>
+            </Wrapper>
         </Section>
     )
 
