@@ -5,8 +5,8 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 15em;
-    width:80em;
+    height: 25%;
+    width:85%;
     background-color: #e8e4e6;
     border:4px solid;
     border-radius: 15px;
