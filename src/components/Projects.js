@@ -14,11 +14,11 @@ const Wrapper = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto; 
-    height: 55em;
-    width: 90em;
+    height: 75%;
+    width: 80%;
     background-color: #fffffe;
     border:4px solid;
-    border-radius: 15px;
+    border-radius: 40px;
     border-color: #e16162;
 `
 

@@ -2,6 +2,7 @@ import { useState } from "react"
 import About from "../components/About"
 import Contact from "../components/Contact"
 import Projects from "../components/Projects"
+import TechStack from "../components/TechStack"
 import styled from "styled-components"
 import projectsData from "../data/ProjectData"
 
@@ -20,6 +21,7 @@ const Home = () => {
     return (
         <Wrapper>
             <About />
+            <TechStack />
             <Projects projects={projects} />
             <Contact />
         </Wrapper>

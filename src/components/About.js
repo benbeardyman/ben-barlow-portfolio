@@ -10,15 +10,16 @@ const Section = styled.section`
 `
 const Wrapper = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    /* align-items: flex-end; */
+    align-items: center;
     flex-wrap: wrap;
-    /* gap: 16px; */
-    height: 70%;
+    gap: 16px;
+    height: 50%;
     width: 80%;
     background-color: #fffffe;
     border:4px solid;
-    border-radius: 15px;
+    border-radius: 40px;
     border-color: #e16162;
 `
 
@@ -29,7 +30,7 @@ const Header = styled.h2`
 const ProfileImage = styled.img`
     margin: 20px;
     border:4px solid;
-    border-radius: 15px;
+    border-radius: 40px;
     border-color: #001e1d;
 `
 

@@ -22,16 +22,16 @@ const Header = styled.h2`
     color: #001e1d;
 `
 
-const Contact = () => {
+const TechStack = () => {
 
     return (
-        <Section id="contact">
+        <Section id="tech_stack">
             <Wrapper>
-                <Header>Contact</Header>
+                <Header>Tech Stack</Header>
             </Wrapper>
         </Section>
     )
 
 }
 
-export default Contact
+export default TechStack

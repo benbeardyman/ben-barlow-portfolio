@@ -9,7 +9,7 @@ const Wrapper = styled.nav`
     align-items: center;
     height: 100vh;
     background-color: #004643;
-    border-right:5px solid;
+    border-right:3px solid;
     border-color: #f9bc60;
 `
 const NavLinks = styled.ul`
@@ -20,17 +20,18 @@ const NavLinks = styled.ul`
 `
 
 const NavLink = styled.li`
-    width: 7em;
+    width: 110px;
     border-top:.15rem solid;
     border-color: #e16162;
-    padding: 0.5rem;
+    padding: .7rem;
 `
 
 const linkStyle = {
     textDecoration: "none",
     color: "#f9bc60",
-    fontSize: "1.5rem",
-    fontWeight: "300"
+    fontSize: "1rem",
+    fontWeight: "300",
+    margin: "1rem"
 }
 
 const Logo = styled.img`
@@ -47,6 +48,9 @@ const NavBar = () => {
             <NavLinks>
                 <NavLink>
                     <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>
+                </NavLink>
+                <NavLink>
+                    <Link smooth to="/ben-barlow-portfolio/#tech_stack" style={linkStyle}>Tech Stack</Link>
                 </NavLink>
                 <NavLink>
                     <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>Projects</Link>
