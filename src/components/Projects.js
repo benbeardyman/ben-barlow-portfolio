@@ -14,8 +14,8 @@ const Wrapper = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto; 
-    height: 70%;
-    width: 80%;
+    height: 55em;
+    width: 90em;
     background-color: #fffffe;
     border:4px solid;
     border-radius: 15px;
