@@ -4,22 +4,24 @@ import { HashLink as Link } from "react-router-hash-link"
 
 const Wrapper = styled.nav`
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: left; */
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
     background-color: #004643;
     border-right:3px solid;
     border-color: #f9bc60;
 `
-const NavLinks = styled.ul`
+
+const NavLinks = styled.div`
+    grid-area: links;
     display: flex;
     flex-direction:column;
     padding:0;
     list-style: none;
 `
 
-const NavLink = styled.li`
+const NavLink = styled.div`
     width: 110px;
     border-top:.15rem solid;
     border-color: #e16162;
@@ -35,32 +37,37 @@ const linkStyle = {
 }
 
 const Logo = styled.img`
-    width: 80px;
+    width: 100px;
+    grid-area: logo;
+`
+
+const Placeholder = styled.div`
+    height: 80px;
 `
 
 const NavBar = () => {
 
     return (
         <>
-        
-        <Wrapper>
-            {/* <Logo src={logo}/> */}
-            <NavLinks>
-                <NavLink>
-                    <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>
-                </NavLink>
-                <NavLink>
-                    <Link smooth to="/ben-barlow-portfolio/#tech_stack" style={linkStyle}>Tech Stack</Link>
-                </NavLink>
-                <NavLink>
-                    <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>Projects</Link>
-                </NavLink>
-                <NavLink>
-                    <Link smooth to="/ben-barlow-portfolio/#contact" style={linkStyle}>Contact</Link>
-                </NavLink>
-                <NavLink/>
-            </NavLinks>
-        </Wrapper>
+            <Wrapper>
+                <Logo src={logo} />
+                <NavLinks>
+                    <NavLink>
+                        <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>
+                    </NavLink>
+                    <NavLink>
+                        <Link smooth to="/ben-barlow-portfolio/#tech_stack" style={linkStyle}>Tech Stack</Link>
+                    </NavLink>
+                    <NavLink>
+                        <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>Projects</Link>
+                    </NavLink>
+                    <NavLink>
+                        <Link smooth to="/ben-barlow-portfolio/#contact" style={linkStyle}>Contact</Link>
+                    </NavLink>
+                    <NavLink />
+                </NavLinks>
+                <Placeholder></Placeholder>
+            </Wrapper>
         </>
     )
 

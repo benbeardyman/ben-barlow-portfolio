@@ -11,10 +11,6 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: flex-start;
     width: 80%;
-    /* background-color: #fffffe;
-    border:4px solid;
-    border-radius: 40px;
-    border-color: #e16162; */
 `
 
 const Header = styled.h2`

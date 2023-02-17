@@ -30,8 +30,9 @@ const Header = styled.h2`
 const ProfileImage = styled.img`
     margin: 20px;
     border:4px solid;
-    border-radius: 40px;
+    border-radius: 50%;
     border-color: #001e1d;
+    height: 8em;
 `
 
 const About = () => {
@@ -41,7 +42,7 @@ const About = () => {
             <Wrapper>
                 <Header>About</Header>
                 <p>I'm an Edinburgh based software developer. I see myself as full stack but leaning towards the front end</p>
-                <ProfileImage src={pixelMug} height="200" />
+                <ProfileImage src={pixelMug}/>
             </Wrapper>
         </Section>
     )
