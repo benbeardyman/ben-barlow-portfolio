@@ -15,7 +15,9 @@ const Header = styled.h2`
 
 const Ul = styled.ul`
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: space-between; */
     list-style: none;
 `
 
@@ -29,7 +31,9 @@ const Projects = ({ projects }) => {
         <Section id='projects'>
             <Header>Projects</Header>
             <ProjectsWrapper>
-            <Ul>{projectsArray}</Ul>
+                {/* <Ul> */}
+                    {projectsArray}
+                {/* </Ul> */}
             </ProjectsWrapper>
         </Section>
     )
