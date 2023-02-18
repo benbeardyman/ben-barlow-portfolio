@@ -66,7 +66,7 @@ const NavBar = () => {
                     </NavLink>
                     <NavLink />
                 </NavLinks>
-                <Placeholder></Placeholder>
+                <Placeholder/>
             </Wrapper>
         </>
     )

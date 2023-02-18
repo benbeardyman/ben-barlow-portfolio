@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto; 
-    height: 75%;
+    height: 90%;
     width: 80%;
     background-color: #fffffe;
     border:4px solid;
@@ -35,7 +35,6 @@ const Projects = ({ projects }) => {
     return (
         <Section id='projects'>
             <Wrapper>
-            <Header>Projects</Header>
                 {projectsArray}
             </Wrapper>
         </Section>

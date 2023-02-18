@@ -14,11 +14,11 @@ const Wrapper = styled.div`
 `
 
 const ItemHead = styled.h3`
-    padding: .75rem;
+    padding-left: .5rem;
 `
 
 const ItemText = styled.p`
-    padding: .75rem;
+    padding: .5rem;
 `
 
 const ProjectItem = ({ name, description, image, url }) => {
