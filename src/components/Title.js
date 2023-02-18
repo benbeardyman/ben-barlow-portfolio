@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
+import Typewriter from "typewriter-effect"
 import styled from "styled-components"
-
 
 
 const Section = styled.section`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -15,28 +16,29 @@ const TitleHeader = styled.h1`
     color: #f9bc60;
     font-size: 6em;
     font-weight: 400;
+    text-align: center;
 `
 
 const Title = () => {
 
-    const [text, setText] = useState("")
-    const [fullText, setFullText] = useState("<b>en </b>arlow")
-    const [index, setIndex] = useState(0)
-
-    useEffect(() => {
-        if (index < fullText.length) {
-            setTimeout(() => {
-                setText(text + fullText[index])
-                setIndex(index + 1)
-            }, 200)
-        }
-    }, [index])
-
     return (
         <Section id="title">
             <TitleHeader>
-                {text}
-                {/* {"<b>"}en {"</b>"}arlow */}
+                <Typewriter
+                    onInit={(typewriter) => {
+                        typewriter
+                            // .html(false)
+                            .changeDelay(250)
+                            // .typeString('<b>en </b>arlow')
+                            .typeString('<b')
+                            .typeString('>en </b>arlow')
+                            .typeString('<br/>')
+                            .pauseFor(500)
+                            .typeString('junior software developer')
+                            .start()
+                    }}
+                />
+
             </TitleHeader>
         </Section>
     )
