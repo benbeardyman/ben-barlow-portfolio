@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react"
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
 
@@ -12,7 +11,7 @@ const Section = styled.section`
     background-color: #004643;
 `
 
-const TitleHeader = styled.h1`
+const TitleHeader = styled.div`
     color: #f9bc60;
     font-size: 6em;
     font-weight: 400;
@@ -27,22 +26,18 @@ const Title = () => {
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
-                            // .html(false)
                             .changeDelay(250)
-                            // .typeString('<b>en </b>arlow')
                             .typeString('<b')
                             .typeString('>en </b>arlow')
                             .typeString('<br/>')
                             .pauseFor(500)
-                            .typeString('junior software developer')
+                            .typeString('software developer')
                             .start()
                     }}
                 />
-
             </TitleHeader>
         </Section>
     )
-
 }
 
 export default Title
