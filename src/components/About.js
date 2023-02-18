@@ -40,7 +40,6 @@ const About = () => {
     return (
         <Section id="about">
             <Wrapper>
-                <Header>About</Header>
                 <p>I'm an Edinburgh based software developer. I see myself as full stack but leaning towards the front end</p>
                 <ProfileImage src={pixelMug}/>
             </Wrapper>

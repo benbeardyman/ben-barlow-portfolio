@@ -3,6 +3,7 @@ import About from "../components/About"
 import Contact from "../components/Contact"
 import Projects from "../components/Projects"
 import TechStack from "../components/TechStack"
+import Title from "../components/Title"
 import styled from "styled-components"
 import projectsData from "../data/ProjectData"
 
@@ -20,6 +21,7 @@ const Home = () => {
 
     return (
         <Wrapper>
+            <Title />
             <About />
             <TechStack />
             <Projects projects={projects} />

@@ -50,7 +50,9 @@ const NavBar = () => {
     return (
         <>
             <Wrapper>
-                <Logo src={logo} />
+                <Link smooth to="/ben-barlow-portfolio/#title">
+                    <Logo src={logo} />
+                </Link>
                 <NavLinks>
                     <NavLink>
                         <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>
@@ -66,7 +68,7 @@ const NavBar = () => {
                     </NavLink>
                     <NavLink />
                 </NavLinks>
-                <Placeholder/>
+                <Placeholder />
             </Wrapper>
         </>
     )
