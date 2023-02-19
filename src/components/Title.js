@@ -17,7 +17,9 @@ const TitleHeader = styled.div`
     font-weight: 400;
     text-align: center;
 `
-
+const textStyle = {
+    fontSize: "2em"
+}
 const Title = () => {
 
     return (
@@ -31,7 +33,9 @@ const Title = () => {
                             .typeString('>en </b>arlow')
                             .typeString('<br/>')
                             .pauseFor(500)
-                            .typeString('software developer')
+                            .typeString('software')
+                            .typeString('<br/>')
+                            .typeString('developer')
                             .start()
                     }}
                 />
