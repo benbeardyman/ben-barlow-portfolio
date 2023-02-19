@@ -13,13 +13,14 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    height: 50vh;
+    min-height: 50vh;
     width: 75vw;
     background-color: #fffffe;
     border:4px solid;
     border-radius: 40px;
     border-color: #e16162;
     padding-top: 1rem;
+    padding-bottom: 1rem;
 `
 
 const TechWrap = styled.span`
