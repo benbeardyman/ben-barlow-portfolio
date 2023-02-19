@@ -14,7 +14,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 50vh;
+    min-height: 50vh;
     width: 75vw;
     background-color: #fffffe;
     border:4px solid;
@@ -24,6 +24,9 @@ const Wrapper = styled.div`
 
 const Headline = styled.h3`
     padding-top:2rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    text-align: center;
     color: #001e1d;
 `
 
