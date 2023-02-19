@@ -15,11 +15,9 @@ const Wrapper = styled.nav`
 `
 
 const NavLinks = styled.div`
-    grid-area: links;
     display: flex;
     flex-direction:column;
     padding:0;
-    list-style: none;
 `
 
 const NavLink = styled.div`
@@ -39,7 +37,6 @@ const linkStyle = {
 
 const Logo = styled.img`
     width: 100px;
-    grid-area: logo;
 `
 
 const Placeholder = styled.div`
@@ -56,7 +53,6 @@ const NavBar = () => {
                 <Link smooth to="/ben-barlow-portfolio/#title">
                     <Logo src={logo} />
                 </Link>
-                
                 <NavLinks>
                     <NavLink>
                         <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>

@@ -1,8 +1,10 @@
+import { useState } from "react"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import styled from "styled-components"
 import Home from "./container/Home"
 import NavBar from "./components/NavBar"
 import { Icon } from '@iconify/react'
+import MobileNav from "./components/MobileNav"
 
 const Wrapper = styled.div`
   display: grid;
@@ -31,6 +33,17 @@ const HamButton = styled.div`
   }
 `
 
+const MobileNavWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 999;
+`
+
+
 const Nav = styled.div`
   grid-area: nav;
   height: 100vh;
@@ -41,8 +54,14 @@ const Main = styled.div`
   height:100vh;
   overflow: auto;
 `
+const App = () => {
 
-function App() {
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+  const toggleMobileNav = () => {
+    setIsMobileNavOpen(!isMobileNavOpen);
+  }
+
   return (
     <Wrapper>
       <Router>
@@ -51,8 +70,13 @@ function App() {
         </Nav>
         <Main>
           <HamButton className="hamburger">
-            <Icon icon="charm:menu-hamburger" style={hamburger}/>
+            <Icon icon="charm:menu-hamburger" style={hamburger} onClick={toggleMobileNav} />
           </HamButton>
+          {isMobileNavOpen && (
+            <MobileNavWrapper>
+              <MobileNav toggleMobileNav={toggleMobileNav} />
+            </MobileNavWrapper>
+          )}
           <Switch>
             <Route exact path="/ben-barlow-portfolio" component={Home} />
           </Switch>
