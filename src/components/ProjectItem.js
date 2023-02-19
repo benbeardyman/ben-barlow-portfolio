@@ -18,26 +18,26 @@ const Details = styled.div`
 `
 
 const Name = styled.h3`
-    padding-left: .5rem;
-    padding-top: .5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
     margin: 0;
 `
 
 const Description = styled.p`
-    padding-left: .5rem;
+    padding-left: 1rem;
 `
 
 const Url = styled.a`
-    padding-left: .5rem;
-    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
     text-decoration: none;
     font-weight: 600;
     color: #e16162;
 `
 
 const Image = styled.img`
-    align-self: flex-end;
-    margin: .5rem;
+    align-self: center;
+    margin: 1rem;
     height: 10rem;
 `
 
