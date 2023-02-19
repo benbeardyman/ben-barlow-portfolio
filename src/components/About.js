@@ -11,10 +11,9 @@ const Section = styled.section`
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
     height: 50vh;
     width: 75vw;
     background-color: #fffffe;
@@ -23,16 +22,23 @@ const Wrapper = styled.div`
     border-color: #e16162;
 `
 
-const Header = styled.h2`
+const Headline = styled.h3`
+    padding-top:2rem;
     color: #001e1d;
 `
 
+const Description = styled.p`
+    padding: 1.5rem;
+    text-align: center;
+`
+
 const ProfileImage = styled.img`
-    margin: 20px;
     border:4px solid;
     border-radius: 50%;
     border-color: #001e1d;
     height: 8em;
+    margin-top:1rem;
+    margin-bottom: 2rem;
 `
 
 const About = () => {
@@ -40,8 +46,13 @@ const About = () => {
     return (
         <Section id="about">
             <Wrapper>
-                <p>I'm an Edinburgh based software developer. I see myself as full stack but leaning towards the front end</p>
-                <ProfileImage src={pixelMug}/>
+                <Headline>
+                    I'm an Edinburgh based full-stack Software Developer, currently completing the Professional Software Development course at CodeClan.
+                </Headline>
+                <Description>
+                    I have extensive experience in hospitality, management, marketing and design. My past 5 years have centred around a fast growing hospitality startup evolving from a street food business to a flourishing operation with two permanent restaurants and an array of outside catering units, giving me a particular curiosity for the workings of digital hospitality systems.
+                </Description>
+                <ProfileImage src={pixelMug} />
             </Wrapper>
         </Section>
     )
