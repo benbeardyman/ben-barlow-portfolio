@@ -1,6 +1,7 @@
 import logo from "../images/logo.png"
 import styled from "styled-components"
 import { HashLink as Link } from "react-router-hash-link"
+import { Icon } from '@iconify/react'
 
 const Wrapper = styled.nav`
     display: flex;
@@ -45,6 +46,16 @@ const Placeholder = styled.div`
     height: 80px;
 `
 
+// const hamburger = {
+//     height: "2em",
+//     width: "2em",
+//     position: "absolute",
+//     top: "50%",
+//     right: "25px",
+//     transform: "translateY(-50%)",
+//     display: "none"
+// }
+
 const NavBar = () => {
 
     return (
@@ -53,6 +64,15 @@ const NavBar = () => {
                 <Link smooth to="/ben-barlow-portfolio/#title">
                     <Logo src={logo} />
                 </Link>
+                {/* <button className="hamburger">
+                    <Icon icon="charm:menu-hamburger" style={hamburger}>
+                        <path
+                            fillRule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clipRule="evenodd"
+                        />
+                    </Icon>
+                </button> */}
                 <NavLinks>
                     <NavLink>
                         <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>About</Link>

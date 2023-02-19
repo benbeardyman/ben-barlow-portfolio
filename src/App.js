@@ -8,6 +8,9 @@ const Wrapper = styled.div`
   grid-template-areas: 'nav main';
   grid-template-columns: 136px 1fr;
   min-height:100%;
+  @media screen and (max-width:790px) {
+    grid-template-columns: 0px 1fr;
+  }
 `
 
 const Nav = styled.div`

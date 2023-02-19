@@ -7,9 +7,6 @@ import Title from "../components/Title"
 import styled from "styled-components"
 import projectsData from "../data/ProjectData"
 
-
-
-
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
