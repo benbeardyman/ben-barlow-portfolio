@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ben-barlow-portfolio/static/css/main.58be3c8b.css",
-    "main.js": "/ben-barlow-portfolio/static/js/main.8329ab0a.js",
+    "main.js": "/ben-barlow-portfolio/static/js/main.cb15bfee.js",
     "static/js/787.7771725d.chunk.js": "/ben-barlow-portfolio/static/js/787.7771725d.chunk.js",
     "static/media/pixel_mug.jpg": "/ben-barlow-portfolio/static/media/pixel_mug.be97a93bd53f3612f3e4.jpg",
     "index.html": "/ben-barlow-portfolio/index.html",
     "main.58be3c8b.css.map": "/ben-barlow-portfolio/static/css/main.58be3c8b.css.map",
-    "main.8329ab0a.js.map": "/ben-barlow-portfolio/static/js/main.8329ab0a.js.map",
+    "main.cb15bfee.js.map": "/ben-barlow-portfolio/static/js/main.cb15bfee.js.map",
     "787.7771725d.chunk.js.map": "/ben-barlow-portfolio/static/js/787.7771725d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58be3c8b.css",
-    "static/js/main.8329ab0a.js"
+    "static/js/main.cb15bfee.js"
   ]
 }
