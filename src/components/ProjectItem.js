@@ -8,6 +8,10 @@ const Wrapper = styled.div`
     border:4px solid;
     border-radius: 15px;
     border-color: #e16162;
+    @media screen and (max-width: 920px) {
+        flex-direction:column;
+        height:32%;
+    }
 `
 
 const Details = styled.div`
@@ -21,10 +25,16 @@ const Name = styled.h3`
     padding-left: 1rem;
     padding-top: 1rem;
     margin: 0;
+    @media screen and (max-width: 920px) {
+        font-size: .75rem;
+    }
 `
 
 const Description = styled.p`
     padding-left: 1rem;
+    @media screen and (max-width: 920px) {
+        font-size: .75rem;
+    }
 `
 
 const Url = styled.a`
@@ -33,12 +43,19 @@ const Url = styled.a`
     text-decoration: none;
     font-weight: 600;
     color: #e16162;
+    @media screen and (max-width: 920px) {
+        font-size: .75rem;
+    }
 `
 
 const Image = styled.img`
     align-self: center;
     margin: 1rem;
-    height: 90%;
+    max-height: 90%;
+    @media screen and (max-width: 920px) {
+        margin: 0;
+        max-height: 40%;
+    }
 `
 
 const ProjectItem = ({ name, description, image, url }) => {

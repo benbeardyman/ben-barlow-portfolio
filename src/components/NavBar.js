@@ -12,6 +12,14 @@ const Wrapper = styled.nav`
     background-color: #004643;
     border-right:3px solid;
     border-color: #f9bc60;
+    /* @media screen and (max-width: 790px) {
+        .nav-links {
+        display: none;
+    }
+        .hamburger {
+        display: block;
+    }
+} */
 `
 
 const NavLinks = styled.div`
@@ -46,15 +54,15 @@ const Placeholder = styled.div`
     height: 80px;
 `
 
-// const hamburger = {
-//     height: "2em",
-//     width: "2em",
-//     position: "absolute",
-//     top: "50%",
-//     right: "25px",
-//     transform: "translateY(-50%)",
-//     display: "none"
-// }
+const hamburger = {
+    height: "2em",
+    width: "2em",
+    position: "absolute",
+    top: "50%",
+    right: "25px",
+    transform: "translateY(-50%)",
+    display: "none"
+}
 
 const NavBar = () => {
 
@@ -65,13 +73,7 @@ const NavBar = () => {
                     <Logo src={logo} />
                 </Link>
                 {/* <button className="hamburger">
-                    <Icon icon="charm:menu-hamburger" style={hamburger}>
-                        <path
-                            fillRule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                            clipRule="evenodd"
-                        />
-                    </Icon>
+                    <Icon icon="charm:menu-hamburger" style={hamburger}/>
                 </button> */}
                 <NavLinks>
                     <NavLink>
@@ -90,9 +92,11 @@ const NavBar = () => {
                 </NavLinks>
                 <Placeholder />
             </Wrapper>
+
         </>
     )
 
 }
+
 
 export default NavBar
