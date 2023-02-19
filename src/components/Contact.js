@@ -11,7 +11,7 @@ const Section = styled.section`
 const Wrapper = styled.div`
     display: flex;
     justify-content: flex-start;
-    width: 80%;
+    width: 75vw;
 `
 
 const Header = styled.h2`

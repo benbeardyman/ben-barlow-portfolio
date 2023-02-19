@@ -39,7 +39,6 @@ const Image = styled.img`
     align-self: center;
     margin: 1rem;
     height: 90%;
-    
 `
 
 const ProjectItem = ({ name, description, image, url }) => {
