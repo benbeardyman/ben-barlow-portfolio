@@ -11,6 +11,7 @@ const Wrapper = styled.div`
     @media screen and (max-width: 920px) {
         flex-direction:column;
         height:32%;
+        width:90vh;
     }
 `
 
