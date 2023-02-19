@@ -13,22 +13,25 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto; 
     height: 90vh;
-    width: 75vw;
-    background-color: #fffffe;
-    border:4px solid;
-    border-radius: 40px;
-    border-color: #e16162;
+    
+    @media screen and (min-width: 992px) {
+        margin: 0 auto; 
+        width: 75vw;
+        background-color: #fffffe;
+        border:4px solid;
+        border-radius: 40px;
+        border-color: #e16162;
+    }
 `
 
 const Projects = ({ projects }) => {
 
     const projectsArray = projects.map((project) => {
         return (
-            <ProjectItem key={project.id} 
-                name={project.name} 
-                description={project.description} 
+            <ProjectItem key={project.id}
+                name={project.name}
+                description={project.description}
                 image={project.img}
                 url={project.url} />
         )

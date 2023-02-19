@@ -13,9 +13,12 @@ const Section = styled.section`
 
 const TitleHeader = styled.div`
     color: #f9bc60;
-    font-size: 6em;
+    font-size: 6rem;
     font-weight: 400;
     text-align: center;
+    @media screen and (max-width: 920px) {
+        font-size:  3rem;
+    }
 `
 const textStyle = {
     fontSize: "2em"
