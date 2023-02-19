@@ -17,7 +17,7 @@ import { Icon } from '@iconify/react'
 const Section = styled.section`
     display: flex;
     justify-content: center;
-    height: 30vh;
+    min-height: 30vh;
     background-color: #f9bc60;
 `
 const Wrapper = styled.div`

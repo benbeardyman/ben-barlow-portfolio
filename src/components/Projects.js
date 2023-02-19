@@ -2,7 +2,7 @@ import ProjectItem from "./ProjectItem"
 import styled from "styled-components"
 
 const Section = styled.section`
-    height: 100vh;
+    min-height: 100vh;
     background-color: #004643;
     display:flex; 
     align-items: center;
