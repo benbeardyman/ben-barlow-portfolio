@@ -8,10 +8,10 @@ const Wrapper = styled.div`
     border:4px solid;
     border-radius: 15px;
     border-color: #e16162;
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 992px) {
         flex-direction:column;
         height:32%;
-        width:90vh;
+        width:90vw;
     }
 `
 
