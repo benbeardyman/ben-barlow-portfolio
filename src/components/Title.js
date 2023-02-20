@@ -23,9 +23,7 @@ const TitleHeader = styled.div`
         font-size:  2.5rem;
     }
 `
-const textStyle = {
-    fontSize: "2em"
-}
+
 const Title = () => {
 
     return (

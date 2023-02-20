@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     border-color: #e16162;
     @media screen and (max-width: 991px) {
         flex-direction:column;
+        justify-content: space-evenly;
         height:32vh;
         width:75vw;
     }
@@ -35,6 +36,7 @@ const Name = styled.h3`
     padding-top: 1rem;
     margin: 0;
     @media screen and (max-width: 991px) {
+        margin-top:.5rem;
         font-size: .75rem;
     }
 `
@@ -56,6 +58,7 @@ const Url = styled.a`
     color: #e16162;
     @media screen and (max-width: 991px) {
         font-size: .75rem;
+        padding-bottom: .5rem;
     }
 `
 
@@ -65,7 +68,11 @@ const Image = styled.img`
     max-height: 90%;
     @media screen and (max-width: 991px) {
         margin: 0;
-        max-height: 40%;
+        max-height: 45%;
+    }
+    @media screen and (max-width: 479px) {
+        margin: 0;
+        max-height: 35%;
     }
 `
 
