@@ -2,17 +2,24 @@ import styled from "styled-components"
 
 const Wrapper = styled.div`
     display: flex;
-    height: 25%;
-    width:85%;
+    height: 27vh;
+    width:70vw;
     background-color: #e8e4e6;
     border:4px solid;
     border-radius: 15px;
     border-color: #e16162;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 991px) {
         flex-direction:column;
-        height:32%;
+        height:32vh;
+        width:75vw;
+    }
+    @media screen and (max-width: 767px) {
         width:90vw;
     }
+    @media screen and (max-width: 479px) {
+        height:40vh;
+    }
+
 `
 
 const Details = styled.div`
@@ -24,27 +31,30 @@ const Details = styled.div`
 
 const Name = styled.h3`
     padding-left: 1rem;
+    padding-right:1rem;
     padding-top: 1rem;
     margin: 0;
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 991px) {
         font-size: .75rem;
     }
 `
 
 const Description = styled.p`
     padding-left: 1rem;
-    @media screen and (max-width: 920px) {
+    padding-right:1rem;
+    @media screen and (max-width: 991px) {
         font-size: .75rem;
     }
 `
 
 const Url = styled.a`
     padding-left: 1rem;
+    padding-right:1rem;
     padding-bottom: 1rem;
     text-decoration: none;
     font-weight: 600;
     color: #e16162;
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 991px) {
         font-size: .75rem;
     }
 `
@@ -53,7 +63,7 @@ const Image = styled.img`
     align-self: center;
     margin: 1rem;
     max-height: 90%;
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 991px) {
         margin: 0;
         max-height: 40%;
     }

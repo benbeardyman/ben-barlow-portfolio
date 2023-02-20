@@ -21,35 +21,87 @@ const Wrapper = styled.div`
     border-color: #e16162;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    @media screen and (max-width: 991px) {
+        width:75vw;
+    }
+    @media screen and (max-width: 767px) {
+        width:90vw;
+    }
 `
 
 const TechWrap = styled.span`
     display: flex;
     align-items: center;
+    font-weight: 300;
+    @media screen and (max-width: 479px) {
+        flex-direction: column;
+        font-weight: 100;
+        font-size: .8rem;
+        padding-bottom:.5rem;
+    }
 `
-const iconStyle = {
-    margin: ".5rem",
-    paddingRight: "1rem",
-    height: "2em",
-    width: "2em"
-}
 
 const FrontEnd = styled.div`
     display: flex;
     flex-direction: column;
+    & > span > :first-child {
+            margin: .5rem;
+            padding-right: 1rem;
+            height: 2em;
+            width: 2em;
+    }
+    @media screen and (max-width: 479px) {
+        align-items: center;
+        & > span > :first-child {
+            margin: 0;
+            padding-right: 0;
+            padding-bottom: .25rem;
+        }
+    }
 `
 
 const BackEnd = styled.div`
     display: flex;
     flex-direction: column;
+    & > span > :first-child {
+            margin: .5rem;
+            padding-right: 1rem;
+            height: 2em;
+            width: 2em;
+    }
+    @media screen and (max-width: 479px) {
+        align-items: center;
+        & > span > :first-child {
+            margin: 0;
+            padding-right: 0;
+            padding-bottom: .25rem;
+        }
+    }
 `
 
 const Misc = styled.div`
     display: flex;
     flex-direction: column;
+    & > span > :first-child {
+            margin: .5rem;
+            padding-right: 1rem;
+            height: 2em;
+            width: 2em;
+    }
+    @media screen and (max-width: 479px) {
+        align-items: center;
+        & > span > :first-child {
+            margin: 0;
+            padding-right: 0;
+            padding-bottom: .25rem;
+        }
+    }
 `
 
 const Header = styled.h3`
+@media screen and (max-width: 479px) {
+        font-size: 1rem;
+    }
 `
 
 const TechStack = () => {
@@ -62,28 +114,28 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="skill-icons:javascript"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         JavaScript
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:react-dark"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         React
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:html"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         HTML
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:css"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         CSS
                     </TechWrap>
@@ -93,56 +145,56 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="skill-icons:python-dark"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Python
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:flask-light"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Flask
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:java-light"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Java
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:spring-light"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Spring
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:nodejs-light"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Node.js
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:expressjs-light"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Express.js
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:jest"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Jest
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="logos:mocha"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Mocha
                     </TechWrap>
@@ -152,14 +204,14 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="logos:cypress-icon"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Cypress
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:mongodb"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         MongoDB
                     </TechWrap>
@@ -167,7 +219,7 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="skill-icons:postgresql-light"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         PostgreSQL
                     </TechWrap>
@@ -175,7 +227,7 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="skill-icons:git"
-                            style={iconStyle}
+                            // style={iconStyle}
                         />
                         Git
                     </TechWrap>

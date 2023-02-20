@@ -1,23 +1,10 @@
 import styled from "styled-components"
 import { Icon } from '@iconify/react'
 
-// const Section = styled.section`
-//     display: flex;
-//     justify-content: center;
-//     height: 30vh;
-//     background-color: #f9bc60;
-// `
-// const Wrapper = styled.div`
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-start;
-//     width: 75vw;
-// `
-
 const Section = styled.section`
     display: flex;
     justify-content: center;
-    min-height: 30vh;
+    min-height: 25vh;
     background-color: #f9bc60;
 `
 const Wrapper = styled.div`
@@ -30,8 +17,6 @@ const Wrapper = styled.div`
 
 const Header = styled.h2`
     color: #001e1d;
-    /* padding-left: 1rem;
-    padding-right:1rem; */
 `
 const Email = styled.a`
     text-decoration: none;
@@ -48,7 +33,7 @@ const iconStyle = {
 const Info = styled.p`
 `
 const Spacer = styled.div`
-    height: 5rem;
+    height: 2rem;
 `
 
 const Contact = () => {

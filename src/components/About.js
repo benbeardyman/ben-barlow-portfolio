@@ -20,6 +20,12 @@ const Wrapper = styled.div`
     border:4px solid;
     border-radius: 40px;
     border-color: #e16162;
+    @media screen and (max-width: 991px) {
+        width:75vw;
+    }
+    @media screen and (max-width: 767px) {
+        width:90vw;
+    }
 `
 
 const Headline = styled.h3`

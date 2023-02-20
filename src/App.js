@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   grid-template-areas: 'nav main';
   grid-template-columns: 136px 1fr;
   min-height:100%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     grid-template-columns: 0px 1fr;
     .hamburger {
     display: block;
@@ -28,7 +28,7 @@ const hamburger = {
 }
 
 const HamButton = styled.div`
-  @media screen and (min-width:768px){
+  @media screen and (min-width:767px){
     display:none;
   }
 `

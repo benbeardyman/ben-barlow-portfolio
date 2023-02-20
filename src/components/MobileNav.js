@@ -14,6 +14,16 @@ const Wrapper = styled.nav`
 const NavLink = styled.div`
     width: 9rem;
     border-top:.15rem solid;
+    border-left:.15rem solid;
+    border-right:.15rem solid;
+    border-color: #e16162;
+    padding: .7rem;
+    text-align: center;
+    font-size:1.4rem;
+`
+const NavLinkBottom = styled.div`
+    width: 9rem;
+    border:.15rem solid;
     border-color: #e16162;
     padding: .7rem;
     text-align: center;
@@ -46,12 +56,11 @@ const MobileNav = ({ toggleMobileNav }) => {
                     Projects
                 </Link>
             </NavLink>
-            <NavLink>
+            <NavLinkBottom>
                 <Link smooth to="/ben-barlow-portfolio/#contact" style={linkStyle} onClick={toggleMobileNav}>
                     Contact
                 </Link>
-            </NavLink>
-            <NavLink />
+            </NavLinkBottom>
         </Wrapper>
     );
 };
