@@ -63,7 +63,7 @@ const Contact = () => {
                     benbcodes@gmail.com
                 </Email>
                 </p>
-                <Info>Handmade by me 2023</Info>
+                <Info>website by me 2023</Info>
                 <Spacer/>
             </Wrapper>
         </Section>

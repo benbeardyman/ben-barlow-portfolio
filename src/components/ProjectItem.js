@@ -72,7 +72,7 @@ const Image = styled.img`
     }
     @media screen and (max-width: 479px) {
         margin: 0;
-        max-height: 35%;
+        max-height: 32%;
     }
 `
 
