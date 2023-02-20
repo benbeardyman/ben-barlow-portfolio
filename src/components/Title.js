@@ -16,8 +16,11 @@ const TitleHeader = styled.div`
     font-size: 6rem;
     font-weight: 400;
     text-align: center;
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 767px) {
         font-size:  3rem;
+    }
+    @media screen and (max-width: 479px) {
+        font-size:  2.5rem;
     }
 `
 const textStyle = {
