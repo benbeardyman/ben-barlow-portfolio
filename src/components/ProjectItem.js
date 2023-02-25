@@ -66,6 +66,9 @@ const Image = styled.img`
     align-self: center;
     margin: 1rem;
     max-height: 90%;
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: black;
     @media screen and (max-width: 991px) {
         margin: 0;
         max-height: 45%;

@@ -10,7 +10,7 @@ const projectsData = [
         id: 2,
         name: "Shop Inventory App",
         description: "CRUD web application that provides the ability to manage a camera shop inventory, adding products and manufacturers and editing stock levels. Created with Python using the Flask library, a PostgreSQL database and RESTful routes.",
-        img: "cam_inv_app.jpg",
+        img: "shop_inv_app.jpg",
         url: "https://github.com/benbeardyman/Camera_Shop_Inventory_App",
     },
     
