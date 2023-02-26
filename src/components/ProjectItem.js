@@ -9,8 +9,9 @@ const Wrapper = styled.div`
     border-radius: 15px;
     border-color: #e16162;
     @media screen and (max-width: 991px) {
-        flex-direction:column;
-        justify-content: top;
+        padding-top: .75rem;
+        flex-direction:column-reverse;
+        justify-content: flex-end;
         height:32vh;
         width:75vw;
     }
@@ -36,7 +37,6 @@ const Name = styled.h3`
     padding-top: 1rem;
     margin: 0;
     @media screen and (max-width: 991px) {
-        margin-top:.5rem;
         font-size: .75rem;
     }
 `
@@ -70,7 +70,6 @@ const Image = styled.img`
     @media screen and (max-width: 991px) {
         margin: 0;
         max-height: 45%;
-        /* margin: 1rem; */
         border-radius: 5px;
         border: solid 2px;
         border-color: black;
@@ -78,10 +77,6 @@ const Image = styled.img`
     @media screen and (max-width: 479px) {
         margin: 0;
         max-height: 32%;
-         /* margin: 1rem; */
-        border-radius: 5px;
-        border: solid 2px;
-        border-color: black;
     }
 `
 
