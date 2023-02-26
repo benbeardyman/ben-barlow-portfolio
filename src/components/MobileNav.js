@@ -33,7 +33,6 @@ const NavLinkBottom = styled.div`
 const linkStyle = {
     textDecoration: "none",
     color: "#f9bc60",
-    // fontSize: "1rem",
     fontWeight: "300",
     margin: "1rem"
 }

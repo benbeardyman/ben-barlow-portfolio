@@ -46,6 +46,7 @@ const Headline = styled.h3`
     padding-left: 2rem;
     }
     @media screen and (max-width: 479px) {
+    font-size: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
     }
@@ -68,6 +69,7 @@ const Description = styled.p`
     }
     @media screen and (max-width: 479px) {
     font-size: .9rem;
+    padding-top: 0rem;
     padding-right: 1rem;
     padding-left: 1rem;
     }
@@ -80,6 +82,11 @@ const ProfileImage = styled.img`
     height: 8em;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+    @media screen and (max-width: 479px) {
+    margin-top: 1rem;
+    margin-bottom: 1.8rem;
+    height: 6rem;
+    }
 `
 
 const About = () => {
