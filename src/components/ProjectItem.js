@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     border-color: #e16162;
     @media screen and (max-width: 991px) {
         flex-direction:column;
-        justify-content: space-evenly;
+        justify-content: top;
         height:32vh;
         width:75vw;
     }
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 const Details = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
 `
 
@@ -64,18 +64,24 @@ const Url = styled.a`
 
 const Image = styled.img`
     align-self: center;
-    margin: 1rem;
-    max-height: 90%;
-    border-radius: 5px;
-    border: solid 2px;
-    border-color: black;
+    max-height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     @media screen and (max-width: 991px) {
         margin: 0;
         max-height: 45%;
+        /* margin: 1rem; */
+        border-radius: 5px;
+        border: solid 2px;
+        border-color: black;
     }
     @media screen and (max-width: 479px) {
         margin: 0;
         max-height: 32%;
+         /* margin: 1rem; */
+        border-radius: 5px;
+        border: solid 2px;
+        border-color: black;
     }
 `
 
