@@ -43,7 +43,6 @@ const MobileNavWrapper = styled.div`
   z-index: 999;
 `
 
-
 const Nav = styled.div`
   grid-area: nav;
   height: 100vh;

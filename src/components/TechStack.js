@@ -121,28 +121,24 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="skill-icons:javascript"
-                        // style={iconStyle}
                         />
                         JavaScript
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:react-dark"
-                        // style={iconStyle}
                         />
                         React
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:html"
-                        // style={iconStyle}
                         />
                         HTML
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:css"
-                        // style={iconStyle}
                         />
                         CSS
                     </TechWrap>
@@ -152,56 +148,48 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="skill-icons:python-dark"
-                        // style={iconStyle}
                         />
                         Python
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:flask-light"
-                        // style={iconStyle}
                         />
                         Flask
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:java-light"
-                        // style={iconStyle}
                         />
                         Java
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:spring-light"
-                        // style={iconStyle}
                         />
                         Spring
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:nodejs-light"
-                        // style={iconStyle}
                         />
                         Node.js
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:expressjs-light"
-                        // style={iconStyle}
                         />
                         Express.js
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:jest"
-                        // style={iconStyle}
                         />
                         Jest
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="logos:mocha"
-                        // style={iconStyle}
                         />
                         Mocha
                     </TechWrap>
@@ -211,14 +199,12 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="logos:cypress-icon"
-                        // style={iconStyle}
                         />
                         Cypress
                     </TechWrap>
                     <TechWrap>
                         <Icon
                             icon="skill-icons:mongodb"
-                        // style={iconStyle}
                         />
                         MongoDB
                     </TechWrap>
@@ -226,7 +212,6 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="skill-icons:postgresql-light"
-                        // style={iconStyle}
                         />
                         PostgreSQL
                     </TechWrap>
@@ -234,7 +219,6 @@ const TechStack = () => {
                     <TechWrap>
                         <Icon
                             icon="skill-icons:git"
-                        // style={iconStyle}
                         />
                         Git
                     </TechWrap>
