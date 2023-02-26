@@ -21,6 +21,7 @@ const Wrapper = styled.div`
     border-radius: 40px;
     border-color: #e16162;
     @media screen and (max-width: 991px) {
+        min-height: 40vh;
         width:75vw;
     }
     @media screen and (max-width: 767px) {
@@ -30,15 +31,46 @@ const Wrapper = styled.div`
 
 const Headline = styled.h3`
     padding-top:2rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
     text-align: center;
     color: #001e1d;
+    @media screen and (max-width: 991px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    }
+    @media screen and (max-width: 767px) {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    }
+    @media screen and (max-width: 479px) {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    }
 `
 
 const Description = styled.p`
-    padding: 1.5rem;
+    padding-top:1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
     text-align: center;
+    @media screen and (max-width: 991px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    }
+    @media screen and (max-width: 767px) {
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    }
+    @media screen and (max-width: 479px) {
+    font-size: .9rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    }
 `
 
 const ProfileImage = styled.img`
@@ -46,7 +78,7 @@ const ProfileImage = styled.img`
     border-radius: 50%;
     border-color: #001e1d;
     height: 8em;
-    margin-top:1rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
 `
 
