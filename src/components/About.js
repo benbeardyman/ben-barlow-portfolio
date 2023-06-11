@@ -1,8 +1,10 @@
 import styled from "styled-components"
 import pixelMug from "../images/pixel_mug.jpg"
+import { HashLink as Link } from "react-router-hash-link"
 
 const Section = styled.section`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -27,6 +29,14 @@ const Wrapper = styled.div`
         width:90vw;
     }
 `
+
+const linkStyle = {
+    textDecoration: "none",
+    color: "#f9bc60",
+    fontSize: "1rem",
+    fontWeight: "300",
+    margin: "1rem"
+}
 
 const Headline = styled.h3`
     padding-top:2rem;
@@ -92,6 +102,9 @@ const About = () => {
 
     return (
         <Section id="about">
+            <Link smooth to="/ben-barlow-portfolio/#title" style={linkStyle}>
+                Previous
+            </Link>
             <Wrapper>
                 <Headline>
                     I am a naturally inquisitive newly qualified Software Developer with extensive experience in retail and hospitality. 
@@ -106,6 +119,9 @@ const About = () => {
                 </Description>
                 <ProfileImage src={pixelMug} />
             </Wrapper>
+            <Link smooth to="/ben-barlow-portfolio/#tech_stack" style={linkStyle}>
+                Next
+            </Link>
         </Section>
     )
 

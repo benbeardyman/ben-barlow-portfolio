@@ -1,9 +1,11 @@
 import styled from "styled-components"
 import { Icon } from '@iconify/react'
+import { HashLink as Link } from "react-router-hash-link"
 
 
 const Section = styled.section`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -27,6 +29,14 @@ const Wrapper = styled.div`
         width:90vw;
     }
 `
+
+const linkStyle = {
+    textDecoration: "none",
+    color: "#f9bc60",
+    fontSize: "1rem",
+    fontWeight: "300",
+    margin: "1rem"
+}
 
 const TechWrap = styled.span`
     display: flex;
@@ -114,6 +124,9 @@ const TechStack = () => {
 
     return (
         <Section id="tech_stack">
+            <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>
+                Previous
+            </Link>
             <Wrapper>
                 <FrontEnd>
                     <Header>Front-End</Header>
@@ -223,6 +236,9 @@ const TechStack = () => {
                     </TechWrap>
                 </Misc>
             </Wrapper>
+            <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>
+                Next
+            </Link>
         </Section>
     )
 

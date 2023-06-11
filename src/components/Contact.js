@@ -1,10 +1,13 @@
 import styled from "styled-components"
 import { Icon } from '@iconify/react'
+import { HashLink as Link } from "react-router-hash-link"
 
 const Section = styled.section`
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    min-height: 25vh;
+    min-height: 100vh;
 `
 const Wrapper = styled.div`
     display: flex;
@@ -14,9 +17,18 @@ const Wrapper = styled.div`
     width: 75vw;
 `
 
+const linkStyle = {
+    textDecoration: "none",
+    color: "#f9bc60",
+    fontSize: "1rem",
+    fontWeight: "300",
+    margin: "1rem"
+}
+
 const Header = styled.h2`
     color: #001e1d;
 `
+
 const Email = styled.a`
     text-decoration: none;
     color: #001e1d;
@@ -39,6 +51,9 @@ const Contact = () => {
 
     return (
         <Section id="contact">
+            <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>
+                Previous
+            </Link>
             <Wrapper>
                 <Spacer/>
                 <Header>Find Me:</Header>

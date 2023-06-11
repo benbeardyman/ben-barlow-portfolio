@@ -1,5 +1,6 @@
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
+import { HashLink as Link } from "react-router-hash-link"
 
 
 const Section = styled.section`
@@ -23,6 +24,14 @@ const TitleHeader = styled.div`
     }
 `
 
+const linkStyle = {
+    textDecoration: "none",
+    color: "#f9bc60",
+    fontSize: "1rem",
+    fontWeight: "300",
+    margin: "1rem"
+}
+
 const Title = () => {
 
     return (
@@ -42,6 +51,9 @@ const Title = () => {
                     }}
                 />
             </TitleHeader>
+            <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>
+                Next
+            </Link>
         </Section>
     )
 }
