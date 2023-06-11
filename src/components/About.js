@@ -1,11 +1,14 @@
 import styled from "styled-components"
 import pixelMug from "../images/pixel_mug.jpg"
 
+import pixelMug from "../images/pixel_mug.jpg"
+
 const Section = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+
 `
 const Wrapper = styled.div`
     display: flex;
