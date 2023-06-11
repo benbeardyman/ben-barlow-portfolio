@@ -32,8 +32,7 @@ const Title = () => {
                     onInit={(typewriter) => {
                         typewriter
                             .changeDelay(250)
-                            .typeString('<b')
-                            .typeString('>en </b>arlow')
+                            .typeString('Ben Barlow')
                             .typeString('<br/>')
                             .pauseFor(500)
                             .typeString('software')
