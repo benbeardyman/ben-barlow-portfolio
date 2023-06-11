@@ -7,7 +7,6 @@ const Section = styled.section`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #004643;
 `
 const Wrapper = styled.div`
     display: flex;

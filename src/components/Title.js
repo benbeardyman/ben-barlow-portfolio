@@ -8,7 +8,6 @@ const Section = styled.section`
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #004643;
 `
 
 const TitleHeader = styled.div`

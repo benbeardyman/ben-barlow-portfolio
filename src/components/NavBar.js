@@ -9,7 +9,6 @@ const Wrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
     height: 100vh;
-    background-color: #004643;
     border-right:3px solid;
     border-color: #f9bc60;
 `
