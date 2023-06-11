@@ -5,7 +5,6 @@ const Section = styled.section`
     display: flex;
     justify-content: center;
     min-height: 25vh;
-    background-color: #f9bc60;
 `
 const Wrapper = styled.div`
     display: flex;

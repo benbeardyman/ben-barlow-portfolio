@@ -1,14 +1,11 @@
 import styled from "styled-components"
 import pixelMug from "../images/pixel_mug.jpg"
-import bground from "../images/bground_tile.jpg"
 
 const Section = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: url(${bground});
-    background-color: #004643;
 `
 const Wrapper = styled.div`
     display: flex;

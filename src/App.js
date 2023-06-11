@@ -5,12 +5,14 @@ import Home from "./container/Home"
 import NavBar from "./components/NavBar"
 import { Icon } from '@iconify/react'
 import MobileNav from "./components/MobileNav"
+import bground from "./images/bground_tile.jpg"
 
 const Wrapper = styled.div`
   display: grid;
   grid-template-areas: 'nav main';
   grid-template-columns: 136px 1fr;
   min-height:100%;
+  background-image: url(${bground});
   @media screen and (max-width: 767px) {
     grid-template-columns: 0px 1fr;
     .hamburger {

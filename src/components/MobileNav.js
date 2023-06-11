@@ -8,7 +8,6 @@ const Wrapper = styled.nav`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #004643;
 `
 
 const NavLink = styled.div`
