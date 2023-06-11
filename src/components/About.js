@@ -95,10 +95,15 @@ const About = () => {
         <Section id="about">
             <Wrapper>
                 <Headline>
-                    I'm an Edinburgh based full-stack Software Developer, currently completing the Professional Software Development course at CodeClan.
+                    I am a naturally inquisitive newly qualified Software Developer with extensive experience in retail and hospitality. 
                 </Headline>
                 <Description>
-                    I have extensive experience in hospitality, management, marketing and design. My past 5 years have centred around a fast growing hospitality startup evolving from a street food business to a flourishing operation with two permanent restaurants and an array of outside catering units, giving me a particular curiosity for the workings of digital hospitality systems.
+                    <p>
+                        For the past 5 years I worked in a dynamic team growing a street food startup into a flourishing multi-location business. This experience honed skills in communication, collaboration and analysis  whilst also giving me the opportunity to be creative through branding, marketing and web-design.
+                    </p> 
+                    <p>
+                        Driven by my fascination with the inner workings of software systems I’ve used previously, I chose the CodeClan bootcamp to pursue a new career in technology. I am now excitedly looking for my first role using my new skills.
+                    </p>
                 </Description>
                 <ProfileImage src={pixelMug} />
             </Wrapper>
