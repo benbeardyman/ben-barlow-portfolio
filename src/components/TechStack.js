@@ -1,244 +1,98 @@
-import styled from "styled-components"
 import { Icon } from '@iconify/react'
 import { HashLink as Link } from "react-router-hash-link"
 
-const Section = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-`
-const Wrapper = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    min-height: 50vh;
-    width: 75vw;
-    background-color: #fffffe;
-    border:4px solid;
-    border-radius: 40px;
-    border-color: #e16162;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    @media screen and (max-width: 991px) {
-        width:75vw;
-    }
-    @media screen and (max-width: 767px) {
-        width:90vw;
-    }
-`
+const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 
-const linkStyle = {
-    textDecoration: "none",
-    color: "#FF9C99",
-    fontSize: "1.2rem",
-    fontWeight: "600",
-    margin: "1rem"
-}
-
-const TechWrap = styled.span`
-    display: flex;
-    align-items: center;
-    font-weight: 300;
-    @media screen and (max-width: 479px) {
-        flex-direction: column;
-        font-weight: 100;
-        font-size: .8rem;
-        padding-bottom:.5rem;
-    }
-`
-
-const FrontEnd = styled.div`
-    display: flex;
-    flex-direction: column;
-    & > span > :first-child {
-        height: 2em;
-        width: 2em;
-        margin: .5rem;
-        padding-right: 1rem;
-    }
-    @media screen and (max-width: 479px) {
-        align-items: center;
-        & > span > :first-child {
-            height: 1.7em;
-            width: 1.7em;
-            margin: 0;
-            padding-right: 0;
-            padding-bottom: .25rem;
-        }
-    }
-`
-
-const BackEnd = styled.div`
-    display: flex;
-    flex-direction: column;
-    & > span > :first-child {
-    height: 2em;
-        width: 2em;
-        margin: .5rem;
-        padding-right: 1rem;
-    }
-    @media screen and (max-width: 479px) {
-        align-items: center;
-        & > span > :first-child {
-            height: 1.7em;
-            width: 1.7em;
-            margin: 0;
-            padding-right: 0;
-            padding-bottom: .25rem;
-        }
-    }
-`
-
-const Misc = styled.div`
-    display: flex;
-    flex-direction: column;
-    & > span > :first-child {
-        height: 2em;
-        width: 2em;
-        margin: .5rem;
-        padding-right: 1rem;
-    }
-    @media screen and (max-width: 479px) {
-        align-items: center;
-        & > span > :first-child {
-            height: 1.7em;
-            width: 1.7em;
-            margin: 0;
-            padding-right: 0;
-            padding-bottom: .25rem;
-        }
-    }
-`
-
-const Header = styled.h3`
-    font-size: 1.3rem;
-    @media screen and (max-width: 479px) {
-    font-size: .9rem;
-    }
-`
+const header = "pb-4 font-bold"
 
 const TechStack = () => {
 
     return (
-        <Section id="tech_stack">
-            <Link smooth to="/ben-barlow-portfolio/#about" style={linkStyle}>
+        <section id="tech_stack" className="flex flex-col items-center justify-center min-h-screen">
+            <Link smooth to="/ben-barlow-portfolio/#about" className={linkStyle}>
                 Previous
             </Link>
-            <Wrapper>
-                <FrontEnd>
-                    <Header>Front-End</Header>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:javascript"
-                        />
+            <div className="flex justify-center items-start w-9/12 bg-clotted-cream border-4 border-coral rounded-3xl pt-4 pb-4">
+                <div className="flex flex-col px-6">
+                    <h3 className={header}>Front-End</h3>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:javascript" className="w-8 h-8 mr-2"/>
                         JavaScript
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:react-dark"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:react-dark" className="w-8 h-8 mr-2"/>
                         React
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:html"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:html" className="w-8 h-8 mr-2"/>
                         HTML
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:css"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:css" className="w-8 h-8 mr-2"/>
                         CSS
-                    </TechWrap>
-                </FrontEnd>
-                <BackEnd>
-                    <Header>Back-End</Header>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:python-dark"
-                        />
+                    </span>
+                </div>
+                <div className="flex flex-col px-6">
+                    <h3 className={header}>Back-End</h3>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:python-dark" className="w-8 h-8 mr-2"/>
                         Python
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:flask-light"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:flask-light" className="w-8 h-8 mr-2"/>
                         Flask
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:java-light"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:java-light" className="w-8 h-8 mr-2"/>
                         Java
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:spring-light"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:spring-light" className="w-8 h-8 mr-2"/>
                         Spring
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:nodejs-light"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:nodejs-light" className="w-8 h-8 mr-2"/>
                         Node.js
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:expressjs-light"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:expressjs-light" className="w-8 h-8 mr-2"/>
                         Express.js
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:jest"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:jest" className="w-8 h-8 mr-2"/>
                         Jest
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="logos:mocha"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="logos:mocha" className="w-8 h-8 mr-2"/>
                         Mocha
-                    </TechWrap>
-                </BackEnd>
-                <Misc>
-                    <Header>Miscellaneous</Header>
-                    <TechWrap>
-                        <Icon
-                            icon="logos:cypress-icon"
-                        />
+                    </span>
+                </div>
+                <div className="flex flex-col px-6">
+                    <h3 className={header}>Miscellaneous</h3>
+                    <span className="flex items-center font-medium pb-3">
+                            <Icon icon="logos:cypress-icon" className="w-8 h-8 mr-2"/>
                         Cypress
-                    </TechWrap>
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:mongodb"
-                        />
+                    </span>
+                    <span className="flex items-center font-medium pb-3">
+                            <Icon icon="skill-icons:mongodb" className="w-8 h-8 mr-2"/>
                         MongoDB
-                    </TechWrap>
+                    </span>
 
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:postgresql-light"
-                        />
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:postgresql-light" className="w-8 h-8 mr-2"/>
                         PostgreSQL
-                    </TechWrap>
+                    </span>
 
-                    <TechWrap>
-                        <Icon
-                            icon="skill-icons:git"
-                        />
+                    <span className="flex items-center font-medium pb-3">
+                        <Icon icon="skill-icons:git" className="w-8 h-8 mr-2"/>
                         Git
-                    </TechWrap>
-                </Misc>
-            </Wrapper>
-            <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>
+                    </span>
+                </div>
+            </div>
+            <Link smooth to="/ben-barlow-portfolio/#projects" className={linkStyle}>
                 Next
             </Link>
-        </Section>
+        </section>
     )
 
 }
