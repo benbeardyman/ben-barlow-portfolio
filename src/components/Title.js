@@ -12,7 +12,7 @@ const Section = styled.section`
 `
 
 const TitleHeader = styled.div`
-    color: #f9bc60;
+    color: #FF9C99;
     font-size: 6rem;
     font-weight: 400;
     text-align: center;
@@ -26,9 +26,9 @@ const TitleHeader = styled.div`
 
 const linkStyle = {
     textDecoration: "none",
-    color: "#f9bc60",
-    fontSize: "1rem",
-    fontWeight: "300",
+    color: "#FF9C99",
+    fontSize: "1.2rem",
+    fontWeight: "600",
     margin: "1rem"
 }
 
