@@ -8,7 +8,7 @@ const header = "pb-4 font-bold"
 const TechStack = () => {
 
     return (
-        <div id="tech_stack" className="flex flex-col items-center justify-center min-h-screen">
+        <div id="tech_stack" className="flex flex-col items-center justify-between min-h-screen">
             <Link smooth to="/ben-barlow-portfolio/#about" className={linkStyle}>
                 Previous
             </Link>

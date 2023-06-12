@@ -8,7 +8,7 @@ const iconStyle = "m-2 h-8 w-8 pl-2"
 const Contact = () => {
 
     return (
-        <div id="contact" className="flex flex-col items-center justify-center min-h-screen">
+        <div id="contact" className="flex flex-col items-center justify-between min-h-screen">
             <Link smooth to="/ben-barlow-portfolio/#projects" className={linkStyle}>
                 Previous
             </Link>
@@ -31,6 +31,7 @@ const Contact = () => {
                 </p>
                 <p>website by me 2023</p>
             </div>
+            <div/>
         </div>
     )
 

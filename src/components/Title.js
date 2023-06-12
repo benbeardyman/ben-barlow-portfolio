@@ -6,7 +6,8 @@ const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 const Title = () => {
 
     return (
-        <div id="title" className="flex flex-col items-center justify-center min-h-screen">
+        <div id="title" className="flex flex-col items-center justify-between min-h-screen">
+            <div/>
             <div className="text-coral text-8xl text-center" >
                 <Typewriter
                     onInit={(typewriter) => {
