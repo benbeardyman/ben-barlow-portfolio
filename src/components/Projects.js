@@ -1,9 +1,11 @@
 import ProjectItem from "./ProjectItem"
 import styled from "styled-components"
+import { HashLink as Link } from "react-router-hash-link"
 
 const Section = styled.section`
     min-height: 100vh;
     display:flex; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 `
@@ -24,6 +26,14 @@ const Wrapper = styled.div`
     }
 `
 
+const linkStyle = {
+    textDecoration: "none",
+    color: "#f9bc60",
+    fontSize: "1rem",
+    fontWeight: "300",
+    margin: "1rem"
+}
+
 const Projects = ({ projects }) => {
 
     const projectsArray = projects.map((project) => {
@@ -38,9 +48,15 @@ const Projects = ({ projects }) => {
 
     return (
         <Section id='projects'>
+            <Link smooth to="/ben-barlow-portfolio/#tech_stack" style={linkStyle}>
+                Previous
+            </Link>
             <Wrapper>
                 {projectsArray}
             </Wrapper>
+            <Link smooth to="/ben-barlow-portfolio/#contact" style={linkStyle}>
+                Next
+            </Link>
         </Section>
     )
 
