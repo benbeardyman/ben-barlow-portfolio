@@ -6,7 +6,7 @@ const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 const Title = () => {
 
     return (
-        <section id="title" className="flex flex-col items-center justify-center min-h-screen">
+        <div id="title" className="flex flex-col items-center justify-center min-h-screen">
             <div className="text-coral text-8xl text-center" >
                 <Typewriter
                     onInit={(typewriter) => {
@@ -25,7 +25,7 @@ const Title = () => {
             <Link smooth to="/ben-barlow-portfolio/#about" className={linkStyle}>
                 Next
             </Link>
-        </section>
+        </div>
     )
 }
 

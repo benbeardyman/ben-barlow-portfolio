@@ -6,7 +6,7 @@ const About = () => {
     const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 
     return (
-        <section id="about" className="flex flex-col items-center justify-center min-h-screen">
+        <div id="about" className="flex flex-col items-center justify-center min-h-screen">
             <Link smooth to="/ben-barlow-portfolio/#title" className={linkStyle}>
                 Previous
             </Link>
@@ -25,7 +25,7 @@ const About = () => {
             <Link smooth to="/ben-barlow-portfolio/#tech_stack" className={linkStyle}>
                 Next
             </Link>
-        </section>
+        </div>
     )
 
 }
