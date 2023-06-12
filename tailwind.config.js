@@ -5,9 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   'tile':"url('src/images/bground_tile.jpg')",
-      // }
+      colors: {
+        'clotted-cream': '#FFFBEF',
+        'coral': '#FF9C99',
+        'seagrass': '#A4F2DF',
+        'turq': '#99E9F2'
+      }
     },
   },
   plugins: [],
