@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { Icon } from '@iconify/react'
 import { HashLink as Link } from "react-router-hash-link"
 
-
 const Section = styled.section`
     display: flex;
     flex-direction: column;
