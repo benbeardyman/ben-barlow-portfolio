@@ -58,13 +58,13 @@ const Contact = () => {
                 <Spacer/>
                 <Header>Find Me:</Header>
                 <div>
-                <a href="https://github.com/benbeardyman" target="_blank">
+                <a href="https://github.com/benbeardyman" target="_blank" rel="noreferrer">
                     <Icon
                         icon="skill-icons:github-dark"
                         style={iconStyle}
                     />
                 </a>
-                <a href="https://www.linkedin.com/in/ben-barlow-codes/" target="_blank">
+                <a href="https://www.linkedin.com/in/ben-barlow-codes/" target="_blank" rel="noreferrer">
                     <Icon
                         icon="skill-icons:linkedin"
                         style={iconStyle}
@@ -73,7 +73,7 @@ const Contact = () => {
                 </div>
                 <p>email: <Email
                     href="mailto:benbcodes@gmail.com?subject=Hi!"
-                    target="_blank">
+                    target="_blank" rel="noreferrer">
                     benbcodes@gmail.com
                 </Email>
                 </p>
