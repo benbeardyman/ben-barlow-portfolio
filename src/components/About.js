@@ -9,26 +9,7 @@ const Section = styled.section`
     justify-content: center;
     min-height: 100vh;
 `
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 50vh;
-    width: 75vw;
-    background-color: #fffffe;
-    border:4px solid;
-    border-radius: 40px;
-    border-color: #e16162;
-    @media screen and (max-width: 991px) {
-        min-height: 40vh;
-        width:75vw;
-    }
-    @media screen and (max-width: 767px) {
-        width:90vw;
-    }
-`
+
 
 const linkStyle = {
     textDecoration: "none",
@@ -98,6 +79,27 @@ const ProfileImage = styled.img`
     }
 `
 
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    width: 75vw;
+    background-color: #fffffe;
+    border:4px solid;
+    border-radius: 40px;
+    border-color: #e16162;
+    @media screen and (max-width: 991px) {
+        min-height: 40vh;
+        width:75vw;
+    }
+    @media screen and (max-width: 767px) {
+        width:90vw;
+    }
+`
+
 const About = () => {
 
     return (
@@ -105,7 +107,7 @@ const About = () => {
             <Link smooth to="/ben-barlow-portfolio/#title" style={linkStyle}>
                 Previous
             </Link>
-            <Wrapper>
+            <div className="flex flex-col">
                 <Headline>
                     I am a naturally inquisitive newly qualified Software Developer with extensive experience in retail and hospitality. 
                 </Headline>
@@ -118,7 +120,7 @@ const About = () => {
                     </p>
                 </Description>
                 <ProfileImage src={pixelMug} />
-            </Wrapper>
+            </div>
             <Link smooth to="/ben-barlow-portfolio/#tech_stack" style={linkStyle}>
                 Next
             </Link>
