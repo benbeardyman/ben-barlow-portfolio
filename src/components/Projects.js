@@ -16,17 +16,23 @@ const Projects = ({ projects }) => {
     })
 
     return (
-        <section id='projects' className="h-screen flex flex-col items-center justify-center">
-            <Link smooth to="/ben-barlow-portfolio/#tech_stack" className={linkStyle}>
-                Previous
-            </Link>
-            <div className="flex flex-col justify-evenly items-center h-4/5">
-                {projectsArray}
+        <div id='projects' className="flex flex-col min-h-screen justify-between">
+            <div className="flex items-center justify-center">
+                <Link smooth to="/ben-barlow-portfolio/#tech_stack" className={linkStyle}>
+                    Previous
+                </Link>
             </div>
-            <Link smooth to="/ben-barlow-portfolio/#contact" className={linkStyle}>
-                Next
-            </Link>
-        </section>
+            <div className="overflow-x-scroll flex">
+                <div className="flex min-w-screen">
+                    {projectsArray}
+                </div>
+            </div>
+            <div className="flex items-center justify-center">
+                <Link smooth to="/ben-barlow-portfolio/#contact" className={linkStyle}>
+                    Next
+                </Link>
+            </div>
+        </div>
     )
 
 }

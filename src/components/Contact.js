@@ -8,25 +8,19 @@ const iconStyle = "m-2 h-8 w-8 pl-2"
 const Contact = () => {
 
     return (
-        <section id="contact" className="flex flex-col items-center justify-center min-h-screen">
+        <div id="contact" className="flex flex-col items-center justify-between min-h-screen">
             <Link smooth to="/ben-barlow-portfolio/#projects" className={linkStyle}>
                 Previous
             </Link>
             <div className="flex flex-col items-end justify-evenly w-9/12">
                 <h2>Find Me:</h2>
                 <div>
-                <a href="https://github.com/benbeardyman" target="_blank" rel="noreferrer">
-                    <Icon
-                        icon="skill-icons:github-dark"
-                        className={iconStyle}
-                    />
-                </a>
-                <a href="https://www.linkedin.com/in/ben-barlow-codes/" target="_blank" rel="noreferrer">
-                    <Icon
-                        icon="skill-icons:linkedin"
-                        className={iconStyle}
-                    />
-                </a>
+                    <a href="https://github.com/benbeardyman" target="_blank" rel="noreferrer">
+                        <Icon icon="skill-icons:github-dark" className={iconStyle}/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ben-barlow-codes/" target="_blank" rel="noreferrer">
+                        <Icon icon="skill-icons:linkedin" className={iconStyle}/>
+                    </a>
                 </div>
                 <p>
                     email:
@@ -37,7 +31,8 @@ const Contact = () => {
                 </p>
                 <p>website by me 2023</p>
             </div>
-        </section>
+            <div/>
+        </div>
     )
 
 }
