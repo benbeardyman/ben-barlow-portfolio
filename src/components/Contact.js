@@ -1,86 +1,45 @@
-import styled from "styled-components"
 import { Icon } from '@iconify/react'
 import { HashLink as Link } from "react-router-hash-link"
 
-const Section = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-`
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    width: 75vw;
-`
+const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 
-const linkStyle = {
-    textDecoration: "none",
-    color: "#FF9C99",
-    fontSize: "1.2rem",
-    fontWeight: "600",
-    margin: "1rem"
-}
-
-const Header = styled.h2`
-    color: #001e1d;
-`
-
-const Email = styled.a`
-    text-decoration: none;
-    color: #001e1d;
-`
-
-const iconStyle = {
-    margin: "0.5rem",
-    height: "2rem",
-    width: "2rem",
-    paddingLeft: ".5rem"
-}
-
-const Info = styled.p`
-`
-const Spacer = styled.div`
-    height: 2rem;
-`
+const iconStyle = "m-2 h-8 w-8 pl-2"
 
 const Contact = () => {
 
     return (
-        <Section id="contact">
-            <Link smooth to="/ben-barlow-portfolio/#projects" style={linkStyle}>
+        <section id="contact" className="flex flex-col items-center content-center min-h-screen">
+            <Link smooth to="/ben-barlow-portfolio/#projects" className={linkStyle}>
                 Previous
             </Link>
-            <Wrapper>
-                <Spacer/>
-                <Header>Find Me:</Header>
+            <div className="flex flex-col items-end content-evenly w-9/12">
+                <div className="h-8"/>
+                <h2>Find Me:</h2>
                 <div>
                 <a href="https://github.com/benbeardyman" target="_blank" rel="noreferrer">
                     <Icon
                         icon="skill-icons:github-dark"
-                        style={iconStyle}
+                        className={iconStyle}
                     />
                 </a>
                 <a href="https://www.linkedin.com/in/ben-barlow-codes/" target="_blank" rel="noreferrer">
                     <Icon
                         icon="skill-icons:linkedin"
-                        style={iconStyle}
+                        className={iconStyle}
                     />
                 </a>
                 </div>
-                <p>email: <Email
-                    href="mailto:benbcodes@gmail.com?subject=Hi!"
-                    target="_blank" rel="noreferrer">
+                <p>
+                    email:
+                    <a href="mailto:benbcodes@gmail.com?subject=Hi!"
+                    target="_blank" rel="noreferrer" className="no-underline">
                     benbcodes@gmail.com
-                </Email>
+                    </a>
                 </p>
-                <Info>website by me 2023</Info>
-                <Spacer/>
-            </Wrapper>
-        </Section>
+                <p>website by me 2023</p>
+                <div className="h-8"/>
+            </div>
+        </section>
     )
 
 }
