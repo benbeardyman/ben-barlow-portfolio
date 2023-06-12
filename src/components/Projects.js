@@ -16,13 +16,13 @@ const Projects = ({ projects }) => {
     })
 
     return (
-        <div>
+        <div id='projects' className="flex flex-col min-h-screen">
             <div className="flex items-center justify-center">
                 <Link smooth to="/ben-barlow-portfolio/#tech_stack" className={linkStyle}>
                     Previous
                 </Link>
             </div>
-            <div id='projects' className="overflow-x-scroll flex">
+            <div className="overflow-x-scroll flex">
                 <div className="flex min-w-screen">
                     {projectsArray}
                 </div>
