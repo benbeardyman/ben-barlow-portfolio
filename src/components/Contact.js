@@ -13,7 +13,6 @@ const Contact = () => {
                 Previous
             </Link>
             <div className="flex flex-col items-end content-evenly w-9/12">
-                <div className="h-8"/>
                 <h2>Find Me:</h2>
                 <div>
                 <a href="https://github.com/benbeardyman" target="_blank" rel="noreferrer">
@@ -37,7 +36,6 @@ const Contact = () => {
                     </a>
                 </p>
                 <p>website by me 2023</p>
-                <div className="h-8"/>
             </div>
         </section>
     )
