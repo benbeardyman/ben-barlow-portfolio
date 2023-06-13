@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <section id="contact" className="flex flex-col items-center justify-center min-h-screen">
             <div className="flex flex-col items-end justify-evenly w-9/12">
-                <h2>Find Me:</h2>
+                <h2 className='font-header text-lg'>Find Me:</h2>
                 <div>
                 <a href="https://github.com/benbeardyman" target="_blank" rel="noreferrer">
                     <Icon
@@ -22,14 +22,14 @@ const Contact = () => {
                     />
                 </a>
                 </div>
-                <p>
-                    email:
+                <p className='font-primary text-lg'>
+                    email: 
                     <a href="mailto:benbcodes@gmail.com?subject=Hi!"
-                    target="_blank" rel="noreferrer" className="no-underline">
+                    target="_blank" rel="noreferrer" className="no-underline ">
                     benbcodes@gmail.com
                     </a>
                 </p>
-                <p>website by me 2023</p>
+                <p className='font-primary text-lg'>website by me 2023</p>
             </div>
         </section>
     )
