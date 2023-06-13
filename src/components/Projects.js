@@ -26,9 +26,7 @@ const Projects = ({ projects }) => {
             <div className="flex items-center">
                 <Icon icon="bxs:left-arrow" color="#ff9c99" width="50" height="50" />
                 <div id="slider" className="relative w-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
-                    {/* <div className="flex"> */}
                         {projectsArray}
-                    {/* </div>     */}
                 </div>
                 <Icon icon="bxs:right-arrow" color="#ff9c99" width="50" height="50" />
             </div>
