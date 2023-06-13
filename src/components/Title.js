@@ -1,13 +1,9 @@
 import Typewriter from "typewriter-effect"
-import { HashLink as Link } from "react-router-hash-link"
-
-const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 
 const Title = () => {
 
     return (
-        <div id="title" className="flex flex-col items-center justify-between min-h-screen">
-            <div/>
+        <div id="title" className="flex flex-col items-center justify-center min-h-screen">
             <div className="text-coral text-8xl text-center" >
                 <Typewriter
                     onInit={(typewriter) => {
@@ -23,9 +19,6 @@ const Title = () => {
                     }}
                 />
             </div>
-            <Link smooth to="/ben-barlow-portfolio/#about" className={linkStyle}>
-                Next
-            </Link>
         </div>
     )
 }
