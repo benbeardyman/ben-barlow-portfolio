@@ -18,7 +18,7 @@ const Home = () => {
             </div>
 
             <div className="h-screen snap-center">
-                <div id="slider" className="relative w-screen flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth">
+                <div id="about-tech-slider" className="relative w-screen flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth">
                     <div className="w-screen snap-center">
                         <About /> 
                     </div>

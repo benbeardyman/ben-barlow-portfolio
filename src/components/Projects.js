@@ -4,12 +4,12 @@ import { Icon } from '@iconify/react'
 const Projects = ({ projects }) => {
 
     const slideLeft = () => {
-        const slider = document.getElementById('slider')
+        const slider = document.getElementById('projects-slider')
         slider.scrollLeft = slider.scrollLeft -1000
     }
 
     const slideRight = () => {
-        const slider = document.getElementById('slider')
+        const slider = document.getElementById('projects-slider')
         slider.scrollLeft = slider.scrollLeft +1000
     }
 
@@ -27,7 +27,7 @@ const Projects = ({ projects }) => {
         <div id='projects' className="flex flex-col min-h-screen justify-center">
             <div className="flex items-center">
                 <Icon icon="bxs:left-arrow" onClick={slideLeft} color="#ff9c99" className="h-12 w-12 ml-2 opacity-50 cursor-pointer hover:opacity-100"/>
-                <div id="slider" className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth">
+                <div id="projects-slider" className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth">
                     {projectsArray}
                 </div>
                 <Icon icon="bxs:right-arrow" onClick={slideRight} color="#ff9c99" className="h-12 w-12 mr-2 opacity-50 cursor-pointer hover:opacity-100"/>
