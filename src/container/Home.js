@@ -11,19 +11,24 @@ const Home = () => {
     const [projects, setProjects] = useState(projectsData)
 
     return (
-        <div className=" h-screen overflow-x-hidden snap-y snap-mandatory scroll-smooth">
-            <div className="h-screen snap-start">
+        <div className="h-screen overflow-x-hidden snap-y snap-mandatory scroll-smooth">
+            
+            <div className="h-screen snap-center">
                 <Title/>
             </div>
+
             <div className="h-screen snap-center">
                 <About/>
             </div>
+
             <div className="h-screen snap-center">
                 <TechStack/>
             </div>
+
             <div className="h-screen snap-center">
                 <Projects projects={projects}/>
             </div>
+
             <div className="h-screen snap-center">
                 <Contact/>
             </div>

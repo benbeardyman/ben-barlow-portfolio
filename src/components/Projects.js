@@ -27,7 +27,7 @@ const Projects = ({ projects }) => {
     })
 
     return (
-        <div id='projects' className="flex flex-col min-h-screen justify-between">
+        <div id='projects' className="flex flex-col min-h-screen justify-center">
             <div className="flex items-center justify-center">
                 {/* <Link smooth to="/ben-barlow-portfolio/#tech_stack" className={linkStyle}>
                     Previous
