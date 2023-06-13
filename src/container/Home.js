@@ -11,14 +11,14 @@ const Home = () => {
     const [projects, setProjects] = useState(projectsData)
 
     return (
-        <div className="h-screen overflow-x-hidden snap-y snap-mandatory scroll-smooth">
+        <div className="h-screen overflow-x-hidden snap-y snap-mandatory scroll-smooth no-scrollbar">
             
             <div className="h-screen snap-center">
                 <Title/>
             </div>
 
             <div className="h-screen snap-center">
-                <div id="about-tech-slider" className="relative w-screen flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth">
+                <div id="about-tech-slider" className="relative w-screen flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth no-scrollbar">
                     <div className="w-screen snap-center">
                         <About /> 
                     </div>
