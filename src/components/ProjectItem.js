@@ -1,8 +1,8 @@
 const ProjectItem = ({ name, description, image, url }) => {
 
     return (
-        <div className="flex justify-center w-screen">
-            <div className="flex w-11/12 h-11/12 bg-clotted-cream border-4 border-coral rounded-xl ">
+        <div className="flex justify-center w-screen snap-center shrink-0">
+            <div className="flex w-11/12 bg-clotted-cream border-4 border-coral rounded-xl ">
                 <div className="flex flex-col justify-evenly items-start">
                     <h3 className="px-4 pt-4 m-0">{name}</h3>
                     <p className="px-4">{description}</p>
