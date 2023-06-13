@@ -10,7 +10,12 @@ module.exports = {
         'coral': '#FF9C99',
         'seagrass': '#A4F2DF',
         'turq': '#99E9F2'
-      }
+      },
+      fontFamily: {
+        primary: "Semplicita Light",
+        title: "Semplicita Ombra",
+        header: "Semplicita Medium",
+      },
     },
   },
   plugins: [],

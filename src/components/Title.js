@@ -4,7 +4,7 @@ const Title = () => {
 
     return (
         <div id="title" className="flex flex-col items-center justify-center min-h-screen">
-            <div className="text-coral text-8xl text-center" >
+            <div className="text-coral text-8xl text-center font-title" >
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
