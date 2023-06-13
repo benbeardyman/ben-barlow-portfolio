@@ -36,11 +36,9 @@ const Projects = ({ projects }) => {
             <div className="flex items-center">
                 <Icon icon="bxs:left-arrow" onClick={slideLeft} color="#ff9c99" className="h-12 w-12 ml-2 opacity-50 cursor-pointer hover:opacity-100"/>
                 <div id="slider" className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth">
-                    {/* <div className="flex m-6"> */}
-                        {projectsArray}
-                    {/* </div> */}
+                    {projectsArray}
                 </div>
-                <Icon icon="bxs:right-arrow"onClick={slideRight} color="#ff9c99" className="h-12 w-12 mr-2 opacity-50 cursor-pointer hover:opacity-100"/>
+                <Icon icon="bxs:right-arrow" onClick={slideRight} color="#ff9c99" className="h-12 w-12 mr-2 opacity-50 cursor-pointer hover:opacity-100"/>
             </div>
             <div className="flex items-center justify-center">
                 <Link smooth to="/ben-barlow-portfolio/#contact" className={linkStyle}>
