@@ -6,6 +6,16 @@ const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 
 const Projects = ({ projects }) => {
 
+    const slideLeft = () => {
+        const slider = document.getElementById('slider')
+        slider.scrollLeft = slider.scrollLeft -1000
+    }
+
+    const slideRight = () => {
+        const slider = document.getElementById('slider')
+        slider.scrollLeft = slider.scrollLeft +1000
+    }
+
     const projectsArray = projects.map((project) => {
         return (
             <ProjectItem key={project.id}
@@ -24,11 +34,11 @@ const Projects = ({ projects }) => {
                 </Link>
             </div>
             <div className="flex items-center">
-                <Icon icon="bxs:left-arrow" color="#ff9c99" width="50" height="50" />
-                <div id="slider" className="relative w-full flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
+                <Icon icon="bxs:left-arrow" onClick={slideLeft} color="#ff9c99" className="h-12 w-12 ml- opacity-50 cursor-pointer hover:opacity-100"/>
+                <div id="slider" className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth">
                         {projectsArray}
                 </div>
-                <Icon icon="bxs:right-arrow" color="#ff9c99" width="50" height="50" />
+                <Icon icon="bxs:right-arrow"onClick={slideRight} color="#ff9c99" className="h-12 w-12 mr-2 opacity-50 cursor-pointer hover:opacity-100"/>
             </div>
             <div className="flex items-center justify-center">
                 <Link smooth to="/ben-barlow-portfolio/#contact" className={linkStyle}>
