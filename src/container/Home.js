@@ -18,11 +18,14 @@ const Home = () => {
             </div>
 
             <div className="h-screen snap-center">
-                <About/>
-            </div>
-
-            <div className="h-screen snap-center">
-                <TechStack/>
+                <div id="slider" className="relative w-screen flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth">
+                    <div className="w-screen snap-center">
+                        <About /> 
+                    </div>
+                    <div className="w-screen snap-center">
+                        <TechStack/>
+                    </div>
+                </div>
             </div>
 
             <div className="h-screen snap-center">
