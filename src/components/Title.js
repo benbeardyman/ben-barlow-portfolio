@@ -1,5 +1,5 @@
 import Typewriter from "typewriter-effect"
-import { HashLink as Link } from "react-router-hash-link"
+// import { HashLink as Link } from "react-router-hash-link"
 
 const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 
@@ -23,9 +23,9 @@ const Title = () => {
                     }}
                 />
             </div>
-            <Link smooth to="/ben-barlow-portfolio/#about" className={linkStyle}>
+            {/* <Link smooth to="/ben-barlow-portfolio/#about" className={linkStyle}>
                 Next
-            </Link>
+            </Link> */}
         </div>
     )
 }

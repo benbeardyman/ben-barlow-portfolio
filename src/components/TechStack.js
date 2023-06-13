@@ -1,5 +1,5 @@
 import { Icon } from '@iconify/react'
-import { HashLink as Link } from "react-router-hash-link"
+// import { HashLink as Link } from "react-router-hash-link"
 
 const linkStyle ="no-underline text-coral text-lg font-semibold m-4"
 
@@ -9,9 +9,9 @@ const TechStack = () => {
 
     return (
         <div id="tech_stack" className="flex flex-col items-center justify-between min-h-screen">
-            <Link smooth to="/ben-barlow-portfolio/#about" className={linkStyle}>
+            {/* <Link smooth to="/ben-barlow-portfolio/#about" className={linkStyle}>
                 Previous
-            </Link>
+            </Link> */}
             <div className="flex justify-center items-start w-9/12 bg-clotted-cream border-4 border-coral rounded-3xl pt-4 pb-4">
                 <div className="flex flex-col px-6">
                     <h3 className={header}>Front-End</h3>
@@ -89,9 +89,9 @@ const TechStack = () => {
                     </span>
                 </div>
             </div>
-            <Link smooth to="/ben-barlow-portfolio/#projects" className={linkStyle}>
+            {/* <Link smooth to="/ben-barlow-portfolio/#projects" className={linkStyle}>
                 Next
-            </Link>
+            </Link> */}
         </div>
     )
 
