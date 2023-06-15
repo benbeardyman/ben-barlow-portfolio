@@ -4,10 +4,15 @@ const header = "pb-4 font-header text-xl"
 
 const TechStack = () => {
 
+    const slideLeft = () => {
+        const slider = document.getElementById('about-tech-slider')
+        slider.scrollLeft = slider.scrollLeft -1000
+    }
+
     return (
         <div id="tech_stack" className="flex flex-col items-center justify-center min-h-screen w-screen">
-            <div className="flex justify-center items-start w-9/12 bg-clotted-cream border-4 border-coral rounded-3xl pt-4 pb-4">
-                
+            <div className="flex flex-col items-center w-9/12 bg-clotted-cream border-4 border-coral rounded-3xl pt-8">
+                <div className="flex justify-center items-start">
                 <div className="flex flex-col px-6">
                     <h3 className={header}>Front-End</h3>
                     
@@ -99,6 +104,8 @@ const TechStack = () => {
                         Git
                     </span>
                 </div>
+                </div>
+                <button onClick={slideLeft} className="px-16 text-center font-primary my-8">{"<"} BACK </button>
             </div>
         </div>
     )
