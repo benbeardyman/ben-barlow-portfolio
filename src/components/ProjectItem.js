@@ -1,6 +1,36 @@
 import { Icon } from '@iconify/react'
 
-const ProjectItem = ({ name, description, image, url }) => {
+const ProjectItem = ({ name, description, image, url, technologies }) => {
+    
+    const technologiesArray = technologies.map((technology, index) => {
+        if (technology.iconName === 'firebase') {
+            return (
+                <div className="group flex flex-col justify-center items-center">
+                    <Icon
+                        key={index}
+                        icon={'logos:firebase'}
+                        className="w-12 h-12 ml-4 mt-2"
+                    />
+                    <span className="opacity-0 group-hover:opacity-100 absolute bg-white text-black text-sm py-1 px-2 rounded-md font-primary">
+                        {technology.name}
+                    </span>
+                </div>
+            )
+        } else {
+            return (
+                <div className="group flex flex-col justify-center items-center">
+                    <Icon
+                        key={index}
+                        icon={'skill-icons:' + technology.iconName}
+                        className="w-12 h-12 ml-4 mt-2"
+                    />
+                    <span className="opacity-0 group-hover:opacity-100 absolute bg-white text-black text-sm py-1 px-2 rounded-md font-primary">
+                        {technology.name}
+                    </span>
+                </div>
+            );
+        }
+    })
 
     return (
         <div className="flex justify-center w-screen snap-center shrink-0">
@@ -17,6 +47,7 @@ const ProjectItem = ({ name, description, image, url }) => {
                     </div>
                     <p className="px-4 font-primary">{description}</p>
                     <h4 className="px-4 pt-4 m-0 font-header">Tech:</h4>
+                    <div className="flex flex-wrap">{technologiesArray}</div>    
                 </div>
                 
                 <img src={process.env.PUBLIC_URL + "/" + image} className="self-center max-h-full rounded-tr-lg rounded-br-lg"/>
