@@ -11,13 +11,26 @@ const Contact = () => {
     const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm('service_jzies6j', 'template_7rk2gos', form.current, '_gXvdVtbg94scZefS')
-        .then((result) => {
+    // emailjs.sendForm('service_jzies6j', 'template_7rk2gos', form.current, '_gXvdVtbg94scZefS')
+    //     .then((result) => {
+    //         console.log(result.text)
+    //         console.log("message sent")
+    //     }, (error) => {
+    //         console.log(error.text)
+    //     })
+    // }
+        emailjs.sendForm(
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_PUBLIC_KEY
+        ).then((result) => {
             console.log(result.text)
             console.log("message sent")
         }, (error) => {
             console.log(error.text)
         })
+        e.target.reset()
     }
 
     return (
