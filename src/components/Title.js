@@ -22,7 +22,7 @@ const Title = () => {
             <h2 className="text-coral text-xl md:text-4xl text-center font-title animate-fade">
                 Software Developer
             </h2>
-            <div className="absolute bottom-0 mb-2 md:mb-8" >
+            <div className="absolute bottom-0 mb-8" >
             <Icon
                     icon="simple-line-icons:arrow-down"
                     onClick={scrollDown}
