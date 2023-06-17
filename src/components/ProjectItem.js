@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react'
 
-const ProjectItem = ({ name, description, image, url, technologies }) => {
+const ProjectItem = ({ name, description, image, url, technologies, index}) => {
     
     const technologiesArray = technologies.map((technology, index) => {
         if (technology.iconName === 'firebase') {
