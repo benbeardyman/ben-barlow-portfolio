@@ -10,8 +10,8 @@ const TechStack = () => {
     const techIcon = 'h-6 w-6 md:w-10 md:h-10 mr-2'
 
     const scrollLeft = () => {
-        const slider = document.getElementById('about-tech-slider')
-        slider.scrollLeft = slider.scrollLeft -1000
+        const aboutComponent = document.getElementById('about')
+        aboutComponent.scrollIntoView({ behavior: 'smooth' })
     }
 
     return (

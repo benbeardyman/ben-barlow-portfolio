@@ -4,13 +4,13 @@ import pixelMug from "../images/pixel_mug.jpg"
 const About = () => {
 
     const scrollDown = () => {
-        const aboutComponent = document.getElementById('projects');
-        aboutComponent.scrollIntoView({ behavior: 'smooth' });
-    };
+        const projectsComponent = document.getElementById('projects')
+        projectsComponent.scrollIntoView({ behavior: 'smooth' })
+    }
 
     const scrollRight = () => {
-        const slider = document.getElementById('about-tech-slider')
-        slider.scrollLeft = slider.scrollLeft +1000
+        const techComponent = document.getElementById('tech')
+        techComponent.scrollIntoView({ behavior: 'smooth' })
     } 
 
     return (

@@ -4,8 +4,8 @@ import { Icon } from '@iconify/react'
 const Projects = ({ projects }) => {
 
     const scrollDown = () => {
-        const aboutComponent = document.getElementById('contact');
-        aboutComponent.scrollIntoView({ behavior: 'smooth' });
+        const contactComponent = document.getElementById('contact');
+        contactComponent.scrollIntoView({ behavior: 'smooth' });
     };
 
     const scrollLeft = () => {
