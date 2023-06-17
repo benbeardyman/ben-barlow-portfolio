@@ -47,7 +47,7 @@ const ProjectItem = ({ name, description, image, url, technologies, index}) => {
                             />
                         </a>
                     </div>
-                    <p className='px-16 font-primary'>{description}</p>
+                    <p className='px-4 md:px-16 font-primary'>{description}</p>
                     <h4 className='px-4 pt-4 m-0 font-header'>Built With:</h4>
                     <div className='flex flex-wrap mb-4'>{technologiesArray}</div>    
                 </div>
