@@ -84,11 +84,6 @@ const TechStack = () => {
                     </span>
                     
                     <span className={techContainer}>
-                        <Icon icon="skill-icons:nodejs-light" className={techIcon}/>
-                        Node.js
-                    </span>
-                    
-                    <span className={techContainer}>
                         <Icon icon="skill-icons:expressjs-light" className={techIcon}/>
                         Express.js
                     </span>
