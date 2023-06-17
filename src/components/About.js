@@ -21,7 +21,7 @@ const About = () => {
                 </h3>
 
                 <div className="flex flex-col items-center md:flex-row md:items-start">
-                    <img src={pixelMug} className='border-2 md:border-4 border-black rounded-full h-14 w-14 md:h-40 md:w-40 mt-1 md:mt-4 md:ml-4 lg:ml-8'/>
+                    <img src={pixelMug} alt="pixelated profile" className='border-2 md:border-4 border-black rounded-full h-14 w-14 md:h-40 md:w-40 mt-1 md:mt-4 md:ml-4 lg:ml-8'/>
                     <div className='flex flex-col pt-2 md:pt-4 mb-2 md:mb-4'>
                         <p className='px-4 lg:px-16 text-left font-header text-sm md:text-lg'>
                             I am a naturally inquisitive newly qualified Software Developer with extensive experience in retail and hospitality. 
