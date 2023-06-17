@@ -8,17 +8,17 @@ module.exports = {
       'mobile': '320px',
       // => @media (min-width: 320px) { ... }
 
-      'tablet': '481px',
-      // => @media (min-width: 481px) { ... }
+      'tablet': '641px',
+      // => @media (min-width: 641px) { ... }
 
-      'laptop': '729px',
-      // => @media (min-width: 729px) { ... }
+      'large-tablet': '769px',
+      // => @media (min-width: 769px) { ... }
 
-      'desktop': '1025px',
+      'laptop': '1025px',
       // => @media (min-width: 1025px) { ... }
 
-      'large-screen': '1201px'
-      // => @media (min-width: 1201px) { ... }
+      'desktop': '1281px',
+      // => @media (min-width: 1281px) { ... }
     },
     extend: {
       colors: {

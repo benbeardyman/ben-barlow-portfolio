@@ -35,7 +35,7 @@ const ProjectItem = ({ name, description, image, url, technologies, index}) => {
 
     return (
         <div className='flex justify-center w-screen snap-center shrink-0'>
-            <div className='flex w-11/12 bg-clotted-cream border-4 border-coral rounded-xl justify-between'>
+            <div className='flex w-3/4 bg-clotted-cream border-4 border-coral rounded-xl justify-between'>
                 <div className='flex flex-col justify-center items-start'>
                     <div className='flex flex-row items-center justify-center'>
                         <h3 className='px-4 pt-4 pb-6 font-header text-lg'>{name}</h3>
@@ -51,7 +51,7 @@ const ProjectItem = ({ name, description, image, url, technologies, index}) => {
                     <div className='flex flex-wrap'>{technologiesArray}</div>    
                 </div>
                 
-                <img src={process.env.PUBLIC_URL + "/" + image} className='self-center border-2 border-gray-500 w-4/5 m-4 rounded-lg'/>
+                <img src={process.env.PUBLIC_URL + "/" + image} className='self-center border-2 border-gray-500 w-3/5 m-4 rounded-lg'/>
             </div>
         </div>
     )
