@@ -35,8 +35,9 @@ const ProjectItem = ({ name, description, image, url, technologies, index}) => {
 
     return (
         <div className='flex justify-center w-screen snap-center shrink-0'>
-            <div className='flex w-3/4 bg-clotted-cream border-4 border-coral rounded-xl justify-between'>
-                <div className='flex flex-col justify-center items-start'>
+            <div className='flex flex-col w-3/4 bg-clotted-cream border-4 border-coral rounded-xl'>
+                <img src={process.env.PUBLIC_URL + "/" + image} className='self-center border-2 border-gray-500 w-3/5 m-4 rounded-lg'/>
+                <div className='flex flex-col justify-center items-center'>
                     <div className='flex flex-row items-center justify-center'>
                         <h3 className='px-4 pt-4 pb-6 font-header text-lg'>{name}</h3>
                         <a href={url} target="_blank" rel="noreferrer" className='pb-4'>
@@ -46,12 +47,12 @@ const ProjectItem = ({ name, description, image, url, technologies, index}) => {
                             />
                         </a>
                     </div>
-                    <p className='px-4 font-primary'>{description}</p>
-                    <h4 className='px-4 pt-4 m-0 font-header'>Tech:</h4>
-                    <div className='flex flex-wrap'>{technologiesArray}</div>    
+                    <p className='px-16 font-primary'>{description}</p>
+                    <h4 className='px-4 pt-4 m-0 font-header'>Built With:</h4>
+                    <div className='flex flex-wrap mb-4'>{technologiesArray}</div>    
                 </div>
                 
-                <img src={process.env.PUBLIC_URL + "/" + image} className='self-center border-2 border-gray-500 w-3/5 m-4 rounded-lg'/>
+                
             </div>
         </div>
     )

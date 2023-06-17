@@ -4,22 +4,6 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    screens: {
-      'mobile': '320px',
-      // => @media (min-width: 320px) { ... }
-
-      'tablet': '641px',
-      // => @media (min-width: 641px) { ... }
-
-      'large-tablet': '769px',
-      // => @media (min-width: 769px) { ... }
-
-      'laptop': '1025px',
-      // => @media (min-width: 1025px) { ... }
-
-      'desktop': '1281px',
-      // => @media (min-width: 1281px) { ... }
-    },
     extend: {
       colors: {
         'clotted-cream': '#FFFBEF',
