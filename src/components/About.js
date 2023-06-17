@@ -16,7 +16,7 @@ const About = () => {
     return (
         <div id="about" className='flex flex-col items-center justify-center min-h-screen w-screen relative'>
             <div className='flex flex-col flex-wrap justify-center items-center min-h-50 w-10/12 lg:w-3/4 bg-clotted-cream border-2 md:border-4 border-coral rounded-3xl mb-4 md:mb-10'>
-                <h3 className="pt-1 md:pt-4 px-16 text-center font-header text-lg md:text-xl">
+                <h3 className="pt-2 md:pt-4 px-16 text-center font-header text-lg md:text-xl">
                     About Me
                 </h3>
 
@@ -34,8 +34,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
             <div className='flex flex-col flex-wrap justify-center items-center min-h-50 w-10/12 lg:w-3/4 bg-clotted-cream border-2 md:border-4 border-coral rounded-3xl'>
-                <h3 className='pt-1 md:pt-4 px-16 text-center font-header text-lg md:text-xl'>
+                <h3 className='pt-2 md:pt-4 px-16 text-center font-header text-lg md:text-xl'>
                     Experience 
                 </h3>
                 <h4 className='pt-1 md:pt-4 md:px-16 text-center font-header text-sm md:text-xl'>
