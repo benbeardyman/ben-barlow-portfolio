@@ -52,7 +52,7 @@ const Contact = () => {
                     </div>
                 </div>
                 
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col font-primary text-lg mb-4 w-4/12'>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col font-primary md:text-lg mb-4 w-4/5 md:w-3/5 lg:w-4/12'>
                     <label>Name</label>
                     <input type="text" name="user_name" className='px-2 rounded-md border border-coral' required/>
                     <label>Email</label>
@@ -67,7 +67,7 @@ const Contact = () => {
                         </div>
                 </form>    
             </div>
-            <p className='font-primary text-lg absolute bottom-0 mb-8'>website by me 2023</p>
+            <p className='font-primary absolute bottom-0 mb-6'>website by me 2023</p>
         </div>    
     )
 
