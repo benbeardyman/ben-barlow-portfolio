@@ -42,7 +42,7 @@ const Projects = ({ projects }) => {
                     icon="bxs:left-arrow"
                     onClick={scrollLeft}
                     color="#ff9c99"
-                    className="h-12 w-12 ml-16 opacity-50 cursor-pointer hover:opacity-100" 
+                    className="h-12 w-12 ml-4 lg:ml-16 opacity-50 cursor-pointer hover:opacity-100" 
                 />
                 
                 <div id="projects-slider" className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth no-scrollbar">
@@ -60,7 +60,7 @@ const Projects = ({ projects }) => {
                     icon="bxs:right-arrow"
                     onClick={scrollRight}
                     color="#ff9c99"
-                    className="h-12 w-12 mr-16 opacity-50 cursor-pointer hover:opacity-100" 
+                    className="h-12 w-12 mr-4 lg:mr-16 opacity-50 cursor-pointer hover:opacity-100" 
                 />
             </div>
         </div>    
