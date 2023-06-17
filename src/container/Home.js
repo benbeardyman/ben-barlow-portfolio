@@ -22,7 +22,7 @@ const Home = () => {
                     <div id="about" className="w-screen snap-center">
                         <About /> 
                     </div>
-                    <div className="w-screen snap-center">
+                    <div id="tech" className="w-screen snap-center">
                         <TechStack/>
                     </div>
                 </div>

@@ -26,7 +26,7 @@ const Contact = () => {
 
     return (
         <div id="contact" className='flex flex-col items-center justify-center min-h-screen w-screen relative'>
-            <div className='flex flex-col flex-wrap justify-center items-center min-h-50 w-3/4 bg-clotted-cream border-4 border-coral rounded-3xl mb-10'>
+            <div className='flex flex-col flex-wrap justify-center items-center min-h-50 w-10/12 lg:w-3/4 bg-clotted-cream border-2 md:border-4 border-coral rounded-3xl mb-10'>
                 <h2 className='font-header text-lg mt-4'>Contact Me:</h2>
                 <div className='flex font-primary text-lg mt-2'>
                     <Icon icon="ic:round-email" className='w-6 h-6 mr-2 text-coral'/>
@@ -52,7 +52,7 @@ const Contact = () => {
                     </div>
                 </div>
                 
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col font-primary text-lg mb-4 w-4/12'>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col font-primary md:text-lg mb-4 w-4/5 md:w-3/5 lg:w-4/12'>
                     <label>Name</label>
                     <input type="text" name="user_name" className='px-2 rounded-md border border-coral' required/>
                     <label>Email</label>
@@ -67,7 +67,7 @@ const Contact = () => {
                         </div>
                 </form>    
             </div>
-            <p className='font-primary text-lg absolute bottom-0 mb-8'>website by me 2023</p>
+            <p className='font-primary absolute bottom-0 mb-6'>website by me 2023</p>
         </div>    
     )
 
