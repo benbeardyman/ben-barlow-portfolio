@@ -51,7 +51,7 @@ const ProjectItem = ({ name, description, image, url, technologies, index}) => {
                     <div className='flex flex-wrap'>{technologiesArray}</div>    
                 </div>
                 
-                <img src={process.env.PUBLIC_URL + "/" + image} className='self-center max-h-full rounded-tr-lg rounded-br-lg'/>
+                <img src={process.env.PUBLIC_URL + "/" + image} className='self-center border-2 border-gray-500 w-4/5 m-4 rounded-lg'/>
             </div>
         </div>
     )
