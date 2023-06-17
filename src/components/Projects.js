@@ -10,11 +10,13 @@ const Projects = ({ projects }) => {
 
     const scrollLeft = () => {
         const slider = document.getElementById('projects-slider')
+        //need to make dynamic - scrollTo would be better
         slider.scrollLeft = slider.scrollLeft -1000
     }
 
     const scrollRight = () => {
         const slider = document.getElementById('projects-slider')
+         //need to make dynamic - scrollTo would be better
         slider.scrollLeft = slider.scrollLeft +1000
     }
 
