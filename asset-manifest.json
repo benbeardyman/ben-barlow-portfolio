@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ben-barlow-portfolio/static/css/main.7b2e833e.css",
-    "main.js": "/ben-barlow-portfolio/static/js/main.f1073205.js",
+    "main.js": "/ben-barlow-portfolio/static/js/main.1bdf486e.js",
     "static/js/787.7771725d.chunk.js": "/ben-barlow-portfolio/static/js/787.7771725d.chunk.js",
     "static/media/Semplicita Medium.otf": "/ben-barlow-portfolio/static/media/Semplicita Medium.8570e4bacb27edfcbd69.otf",
     "static/media/Semplicita Light.otf": "/ben-barlow-portfolio/static/media/Semplicita Light.42387acf2ef8aff1378e.otf",
@@ -10,11 +10,11 @@
     "static/media/bground_tile.jpg": "/ben-barlow-portfolio/static/media/bground_tile.2165a156135d0f4622ec.jpg",
     "index.html": "/ben-barlow-portfolio/index.html",
     "main.7b2e833e.css.map": "/ben-barlow-portfolio/static/css/main.7b2e833e.css.map",
-    "main.f1073205.js.map": "/ben-barlow-portfolio/static/js/main.f1073205.js.map",
+    "main.1bdf486e.js.map": "/ben-barlow-portfolio/static/js/main.1bdf486e.js.map",
     "787.7771725d.chunk.js.map": "/ben-barlow-portfolio/static/js/787.7771725d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7b2e833e.css",
-    "static/js/main.f1073205.js"
+    "static/js/main.1bdf486e.js"
   ]
 }
