@@ -12,14 +12,14 @@ const Title = () => {
     return (
         <div id="title" className="flex flex-col items-center justify-center min-h-screen relative">
             <div className="flex">
-                <h1 className="text-coral text-8xl text-center font-title slide-top mr-4" >
+                <h1 className="text-coral text-5xl md:text-8xl text-center font-title slide-top mr-4" >
                     Ben
                 </h1>
-                <h1 className="text-coral text-8xl text-center font-title slide-bottom" >
+                <h1 className="text-coral text-5xl md:text-8xl text-center font-title slide-bottom" >
                     Barlow
                 </h1>
             </div>
-            <h2 className="text-coral text-4xl text-center font-title animate-fade">
+            <h2 className="text-coral text-xl md:text-4xl text-center font-title animate-fade">
                 Software Developer
             </h2>
             <div className="absolute bottom-0 mb-8" >
