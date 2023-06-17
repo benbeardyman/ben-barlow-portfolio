@@ -11,7 +11,7 @@ const TechStack = () => {
 
     return (
         <div id="tech_stack" className="flex flex-col items-center justify-center min-h-screen w-screen">
-            <div className="flex flex-col items-center w-9/12 bg-clotted-cream border-4 border-coral rounded-3xl pt-8">
+            <div className="flex flex-col items-center w-9/12 bg-clotted-cream border-2 md:border-4 border-coral rounded-3xl pt-8">
                 <h3 className="mb-2 text-center font-header text-xl">
                     Tech Stack
                 </h3>

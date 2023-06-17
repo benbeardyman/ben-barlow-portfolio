@@ -48,12 +48,12 @@ const Projects = ({ projects }) => {
                 <div id="projects-slider" className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth no-scrollbar">
                     {projectsArray}
                 </div>
-                <div className="absolute bottom-0 mb-8 left-0 right-0 flex justify-center">
+                <div className="absolute bottom-0 mb-2 md:mb-8 left-0 right-0 flex justify-center">
                     <Icon
                         icon="simple-line-icons:arrow-down"
                         onClick={scrollDown}
                         color="#ff9c99"
-                        className="h-12 w-12 opacity-70 cursor-pointer hover:opacity-100 animate-fade" 
+                        className="h-10 w-10 md:h-12 md:w-12 opacity-70 cursor-pointer hover:opacity-100 animate-fade" 
                     />
                 </div>
                 <Icon
