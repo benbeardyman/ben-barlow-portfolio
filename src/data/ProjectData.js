@@ -2,7 +2,7 @@ const projectsData = [
     {
         id: 1,
         name: "Solo Travel App",
-        description: "A full stack mobile app built with React-Native and Java. The app is aimed at colo travellers enabling them to meet up with other solo travellers in various cities by creating and joining events.",
+        description: "An iOS app aimed at connecting solo travellers. The users are  able to create and join events based on their location. Learned two new technologies (React-Native and Firebase) in the course of this project.",
         img: "solo_screenshot.jpg",
         url: "https://github.com/benbeardyman/Solo_Travel_App",
         technologies: [
@@ -18,7 +18,7 @@ const projectsData = [
     {
         id: 2,
         name: "Around The World Bucket List App",
-        description: "A full stack React app allowing the user to create a bucket list of countries they want to visit and track where they have already been.",
+        description: "A full stack React app allowing the user to create a bucket list of countries they want to visit. The user is also able to track where they have already been and leave comments on visited countries.",
         img: "around_the_world_app.jpg",
         url: "https://github.com/benbeardyman/Around_The_World_Travel_App",
         technologies: [

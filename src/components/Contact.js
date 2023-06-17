@@ -25,8 +25,8 @@ const Contact = () => {
     }
 
     return (
-        <div id="contact" className="flex flex-col items-center justify-center min-h-screen w-screen relative">
-            <div className="flex flex-col flex-wrap justify-center items-center min-h-50 w-3/4 bg-clotted-cream border-4 border-coral rounded-3xl mb-10">
+        <div id="contact" className='flex flex-col items-center justify-center min-h-screen w-screen relative'>
+            <div className='flex flex-col flex-wrap justify-center items-center min-h-50 w-3/4 bg-clotted-cream border-4 border-coral rounded-3xl mb-10'>
                 <h2 className='font-header text-lg mt-4'>Contact Me:</h2>
                 <div className='flex font-primary text-lg mt-2'>
                     <Icon icon="ic:round-email" className='w-6 h-6 mr-2 text-coral'/>
@@ -40,13 +40,13 @@ const Contact = () => {
                         <a href="https://github.com/benbeardyman" target="_blank" rel="noreferrer">
                             <Icon
                                 icon="skill-icons:github-dark"
-                                className="mt-2 mx-1 h-12 w-12 pl-2"
+                                className='mt-2 mx-1 h-12 w-12 pl-2'
                             />
                         </a>
                         <a href="https://www.linkedin.com/in/ben-barlow-codes/" target="_blank" rel="noreferrer">
                             <Icon
                                 icon="skill-icons:linkedin"
-                                className="mt-2 mx-1 h-12 w-12 pl-2"
+                                className='mt-2 mx-1 h-12 w-12 pl-2'
                             />
                         </a>
                     </div>
