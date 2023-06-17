@@ -42,6 +42,11 @@ const TechStack = () => {
                     <span className={techContainer}>
                         <Icon icon="skill-icons:css" className={techIcon}/>
                         CSS
+                        </span>
+                    
+                    <span className={techContainer}>
+                        <Icon icon="skill-icons:tailwindcss-dark" className={techIcon}/>
+                        Tailwind
                     </span>
                 </div>
                 
