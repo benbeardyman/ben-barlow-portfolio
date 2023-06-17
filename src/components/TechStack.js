@@ -54,16 +54,6 @@ const TechStack = () => {
                     <h3 className={columnHeader}>Back-End</h3>
                     
                     <span className={techContainer}>
-                        <Icon icon="skill-icons:python-dark" className={techIcon}/>
-                        Python
-                    </span>
-                    
-                    <span className={techContainer}>
-                        <Icon icon="skill-icons:flask-light" className={techIcon}/>
-                        Flask
-                    </span>
-                    
-                    <span className={techContainer}>
                         <Icon icon="skill-icons:java-light" className={techIcon}/>
                         Java
                     </span>
@@ -71,6 +61,26 @@ const TechStack = () => {
                     <span className={techContainer}>
                         <Icon icon="skill-icons:spring-light" className={techIcon}/>
                         Spring
+                    </span>
+                        
+                    <span className={techContainer}>
+                        <Icon icon="skill-icons:cs" className={techIcon}/>
+                        C#
+                    </span>
+                    
+                    <span className={techContainer}>
+                        <Icon icon="skill-icons:spring-light" className={techIcon}/>
+                        Spring
+                    </span>
+                        
+                    <span className={techContainer}>
+                        <Icon icon="skill-icons:python-dark" className={techIcon}/>
+                        Python
+                    </span>
+                    
+                    <span className={techContainer}>
+                        <Icon icon="skill-icons:flask-light" className={techIcon}/>
+                        Flask
                     </span>
                     
                     <span className={techContainer}>
