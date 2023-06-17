@@ -28,11 +28,11 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="h-screen snap-center">
+            <div id="projects" className="h-screen snap-center">
                 <Projects projects={projects}/>
             </div>
 
-            <div className="h-screen snap-center">
+            <div id="contact" className="h-screen snap-center">
                 <Contact/>
             </div>
         </div>

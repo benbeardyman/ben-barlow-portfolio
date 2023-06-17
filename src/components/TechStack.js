@@ -4,7 +4,7 @@ const header = "pb-4 font-header text-xl"
 
 const TechStack = () => {
 
-    const slideLeft = () => {
+    const scrollLeft = () => {
         const slider = document.getElementById('about-tech-slider')
         slider.scrollLeft = slider.scrollLeft -1000
     }
@@ -105,7 +105,7 @@ const TechStack = () => {
                     </span>
                 </div>
                 </div>
-                <button onClick={slideLeft} className="px-16 text-center font-primary my-8">{"<"} BACK </button>
+                <button onClick={scrollLeft} className="px-16 text-center font-primary my-8">{"<"} BACK </button>
             </div>
         </div>
     )

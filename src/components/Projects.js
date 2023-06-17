@@ -3,12 +3,17 @@ import { Icon } from '@iconify/react'
 
 const Projects = ({ projects }) => {
 
-    const slideLeft = () => {
+    const scrollDown = () => {
+        const aboutComponent = document.getElementById('contact');
+        aboutComponent.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const scrollLeft = () => {
         const slider = document.getElementById('projects-slider')
         slider.scrollLeft = slider.scrollLeft -1000
     }
 
-    const slideRight = () => {
+    const scrollRight = () => {
         const slider = document.getElementById('projects-slider')
         slider.scrollLeft = slider.scrollLeft +1000
     }
@@ -31,25 +36,34 @@ const Projects = ({ projects }) => {
 
     
     return (
-        <div id='projects' className="flex flex-col min-h-screen justify-center">
+        <div id='projects' className="flex flex-col min-h-screen justify-center relative">
             <div className="flex items-center">
                 <Icon
                     icon="bxs:left-arrow"
-                    onClick={slideLeft}
+                    onClick={scrollLeft}
                     color="#ff9c99"
                     className="h-12 w-12 ml-2 opacity-50 cursor-pointer hover:opacity-100" 
                 />
+                
                 <div id="projects-slider" className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scroll-smooth no-scrollbar">
                     {projectsArray}
                 </div>
+                <div className="absolute bottom-0 mb-8 left-0 right-0 flex justify-center">
+                    <Icon
+                        icon="simple-line-icons:arrow-down"
+                        onClick={scrollDown}
+                        color="#ff9c99"
+                        className="h-12 w-12 opacity-70 cursor-pointer hover:opacity-100 animate-fade" 
+                    />
+                </div>
                 <Icon
                     icon="bxs:right-arrow"
-                    onClick={slideRight}
+                    onClick={scrollRight}
                     color="#ff9c99"
                     className="h-12 w-12 mr-2 opacity-50 cursor-pointer hover:opacity-100" 
                 />
             </div>
-        </div>
+        </div>    
     )
 
 }
